@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
-        distribution: ["", "-slim", "-alpine"]
+        base_tag: ["3.7", "3.7-slim", "3.7-alpine", "3.8", "3.8-slim", "3.8-alpine", "3.9", "3.9-slim", "3.9-alpine", "3.10", "3.10-slim", "3.10-alpine"]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -29,7 +28,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          build-args: TAG=${{ matrix.version matrix.distribution }}
+          build-args: TAG=${{ matrix.base_tag }}
           context: .
           push: true
-          tags: ${{ github.repository }}:${{ matrix.version }}${{ matrix.distribution }}
+          tags: ${{ github.repository }}:${{ matrix.base_tag }}
