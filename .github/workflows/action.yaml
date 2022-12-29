@@ -31,4 +31,4 @@ jobs:
           build-args: TAG=${{ matrix.base_tag }}
           context: .
           push: true
-          tags: ${{ github.repository }}:${{ matrix.base_tag }}
+          tags: seven45/pdm-ci:${{ matrix.base_tag }}
