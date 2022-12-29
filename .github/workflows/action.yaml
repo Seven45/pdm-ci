@@ -32,4 +32,4 @@ jobs:
           build-args: TAG=${{ matrix.version }}${{ matrix.distribution }}
           context: .
           push: true
-          tags: ${{ matrix.version }}{{ matrix.distribution }}
+          tags: ${{ matrix.version }}${{ matrix.distribution }}
