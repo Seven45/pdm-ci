@@ -1,7 +1,7 @@
-# pdm-ci
-PDM base-image for ci usage
+# pdm
+[PDM](https://github.com/pdm-project/pdm) in docker [image](https://hub.docker.com/r/seven45/pdm-ci) (versioned like official python image)
 
-# Gitlab-ci usage:
+# Usage:
 
 pyproject.toml
 ```toml
@@ -34,7 +34,7 @@ linters:
     - pdm run lint
  
  unit-tests:
-  image: seven45/pdm-ci:3.9
+  image: seven45/pdm-ci:3.9-slim
   stage: test
   script:
     - pdm install -dG testing
