@@ -1,4 +1,4 @@
-# pdm
+# pdm-ci
 [PDM](https://github.com/pdm-project/pdm) in docker [image](https://hub.docker.com/r/seven45/pdm-ci) (versioned like official python image)
 
 # Usage:
