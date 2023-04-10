@@ -1,4 +1,6 @@
+ENV PDM_CHECK_UPDATE=false
 ARG TAG
+
 FROM python:${TAG}
 
 MAINTAINER Semyon Dubrovin <seven45@mail.ru>
