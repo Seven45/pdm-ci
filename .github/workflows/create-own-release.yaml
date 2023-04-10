@@ -2,7 +2,7 @@ name: Create release
 on:
   push:
     paths:
-      - 'Version.txt'
+      - 'pdm-version.txt'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
       id: pdm-tag
       uses: juliangruber/read-file-action@v1
       with:
-        path: Version.txt
+        path: pdm-version.txt
 
     - name: Create release
       uses: ncipollo/release-action@v1

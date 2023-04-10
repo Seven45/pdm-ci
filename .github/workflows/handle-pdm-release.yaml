@@ -13,7 +13,7 @@ jobs:
       - name: Fetch release version
         run: |
           curl -sL https://api.github.com/repos/pdm-project/pdm/releases/latest | \
-          jq -r ".tag_name" > Version.txt
+          jq -r ".tag_name" > pdm-version.txt
 
       - name: Check for modified files
         id: git-check
@@ -24,6 +24,6 @@ jobs:
         run: |
           git config --global user.name 'Semyon Dubrovin'
           git config --global user.email 'seven45@mail.ru'
-          git add Version.txt
-          git commit -am "New pdm version: $(cat Version.txt)"
+          git add pdm-version.txt
+          git commit -am "New pdm version: $(cat pdm-version.txt)"
           git push
