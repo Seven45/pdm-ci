@@ -16,10 +16,8 @@ jobs:
       - name: Check for modified files
         id: git-check
         run: echo 'new_version=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")' >> $GITHUB_OUTPUT
-      - name: Debug previous steps
-        run: echo "new version ${{ steps.git-check.outputs.new_version }}"
       - name: Commit latest release version
-        if: steps.git-check.outputs.new_version == 'true'
+        if: ${{ steps.git-check.outputs.new_version }} == 'true'
         run: |
           git config --global user.name 'Semyon Dubrovin'
           git config --global user.email 'seven45@mail.ru'
