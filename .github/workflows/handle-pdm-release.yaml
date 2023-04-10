@@ -15,11 +15,12 @@ jobs:
           jq -r ".tag_name" > Version.txt
       - name: Check for modified files
         id: git-check
-        run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+        run: echo "new_version=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_STATE
       - name: Commit latest release version
-        if: steps.git-check.outputs.modified == 'true'
+        if: steps.git-check.outputs.new_version == 'true'
         run: |
           git config --global user.name 'Semyon Dubrovin'
           git config --global user.email 'seven45@mail.ru'
-          git commit -am "New release version"
+          git add Version.txt
+          git commit -am "New pdm version: $(cat Version.txt)"
           git push
