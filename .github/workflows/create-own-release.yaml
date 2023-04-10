@@ -1,0 +1,21 @@
+on:
+  push:
+    paths:
+      - 'release-versions/*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+    - name: Read tag file
+      id: pdm-tag
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: ./release-versions/pdm-tag.txt
+    - name: Create release
+      uses: ncipollo/release-action@v1
+      with:
+        tag: "${{ steps.pdm-tag.outputs.content }}"

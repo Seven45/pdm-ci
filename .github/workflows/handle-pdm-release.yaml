@@ -1,0 +1,25 @@
+name: Get latest release version
+on:
+  schedule:
+    - cron:  '0 12 * * *'
+jobs:
+  get-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SCOPED_TOKEN }}
+      - name: Fetch release version
+        run: |
+          curl -sL https://api.github.com/repos/pdm-project/pdm/releases/latest | \
+          jq -r ".tag_name" > release-versions/pdm-tag_name.txt
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+      - name: Commit latest release version
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Semyon Dubrovin'
+          git config --global user.email 'seven45@mail.ru'
+          git commit -am "New release version"
+          git push
