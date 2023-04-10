@@ -2,7 +2,7 @@ name: Check new release from original pdm-repo
 on:
   - schedule:
     - cron:  '0 12 * * *'
-  - workflow_dispatch
+  - workflow_dispatch:
 jobs:
   get-version:
     runs-on: ubuntu-latest
