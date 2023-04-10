@@ -58,6 +58,7 @@ test = "pytest -vvv -s tests"
 test_cov = "pytest --cov-branch --cov-report=xml --cov=src tests"
 test_file = "pytest -s -vv ./{args}"
 test_all = {composite = ["test", "lint_check"]}
+...
 ```
 
 `gitlab-ci.yaml`:
@@ -109,5 +110,5 @@ dynamic = ["version"]
 [tool.pdm]
 build = {includes = ["src"]}
 version = { source = "file", path = "src/__version__.py" }
-
+...
 ```
