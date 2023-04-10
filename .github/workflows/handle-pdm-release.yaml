@@ -1,4 +1,4 @@
-name: Check new release from original pdm-repo
+name: Check original pdm release
 on:
   schedule:
     - cron:  '0 12 * * *'
@@ -27,3 +27,8 @@ jobs:
           git add pdm-version.txt
           git commit -am "New pdm version: $(cat pdm-version.txt)"
           git push
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: "${{ steps.pdm-tag.outputs.content }}"
