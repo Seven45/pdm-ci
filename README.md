@@ -1,16 +1,20 @@
 # pdm-ci
+
 [PDM](https://github.com/pdm-project/pdm) in docker [image](https://hub.docker.com/r/seven45/pdm-ci) (versioned like official python image)
 
 Your project's structure:
-- <my_project> (workdir)
-  - `src`
-  - `tests`
+- my_project/ (workdir)
+  - `src/`
+    - your files and folders
+    - `__init__.py`
+    - `__main__.py`
+  - `tests/`
   - `Dockerfile`
   - `pdm.lock`
   - `pyproject.toml`
   - `README.md`
 
-# Python multistage build
+## Python multistage build
 
 `Dockerfile`:
 
@@ -31,14 +35,15 @@ COPY src /project/src
 CMD ["python", "src/__main__.py"]
 ```
 
-# Continuous Integration
+## Continuous Integration
 
 `pyproject.toml`:
 
 ```toml
 ...
+
 [tool.pdm.dev-dependencies]
-testing = ["pytest>=1.5.0"]
+testing = ["pytest-cov>=4.0.0"]
 linting = [
     "setuptools>=65.6.3",
     "black>=22.12.0",
@@ -53,10 +58,9 @@ test = "pytest -vvv -s tests"
 test_cov = "pytest --cov-branch --cov-report=xml --cov=src tests"
 test_file = "pytest -s -vv ./{args}"
 test_all = {composite = ["test", "lint_check"]}
-...
 ```
 
-`gitlab-ci.yaml`
+`gitlab-ci.yaml`:
 
 ```yaml
 stages:
@@ -66,14 +70,44 @@ stages:
 linters:
   stage: lint
   image: seven45/pdm-ci:3.10-alpine
+  only: [ "merge_requests" ]
   script:
     - pdm install --no-default -G linting
     - pdm run lint
  
  pytest:
-  image: seven45/pdm-ci:3.10-slim
   stage: test
+  image: seven45/pdm-ci:3.10-slim
+  only: [ "merge_requests" ]
   script:
     - pdm install -dG testing
     - pdm run test_cov
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    paths:
+      - coverage.xml
+```
+
+
+## Extended usage
+
+Dynamic versioning:
+
+Put your version into file `src/__version__.py` with content: 
+```python
+__version__ = "0.1.0"
+
+```
+
+Put into your `pyproject.toml` file lines:
+
+```toml
+[project]
+...
+dynamic = ["version"]
+
+[tool.pdm]
+build = {includes = ["src"]}
+version = { source = "file", path = "src/__version__.py" }
+
 ```
