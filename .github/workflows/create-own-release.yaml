@@ -15,7 +15,7 @@ jobs:
       id: pdm-tag
       uses: juliangruber/read-file-action@v1
       with:
-        path: ./release-versions/pdm-tag.txt
+        path: Version.txt
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
