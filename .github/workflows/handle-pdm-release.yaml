@@ -15,7 +15,7 @@ jobs:
           jq -r ".tag_name" > Version.txt
       - name: Check for modified files
         id: git-check
-        run: echo 'new_version=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")' >> $GITHUB_STATE
+        run: echo 'new_version=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")' >> $GITHUB_OUTPUT
       - name: Commit latest release version
         if: steps.git-check.outputs.new_version == 'true'
         run: |
