@@ -29,6 +29,7 @@ jobs:
           git push
 
       - name: Create release
+        if: ${{ steps.git-check.outputs.new_version }} == 'true'
         uses: ncipollo/release-action@v1
         with:
           tag: $(cat pdm-version.txt)
