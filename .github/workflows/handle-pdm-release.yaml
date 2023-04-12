@@ -31,4 +31,4 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{cat pdm-version.txt}}
+          tag: $(cat pdm-version.txt)
