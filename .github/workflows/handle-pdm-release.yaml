@@ -35,6 +35,6 @@ jobs:
 
       - name: Create release
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
-        uses: ncipollo/release-action@v1
+        uses: softprops/action-gh-release@v1
         with:
-          tag: ${{ steps.get-version.outputs.version }}
+          tag_name: ${{ steps.get-version.outputs.version }}
