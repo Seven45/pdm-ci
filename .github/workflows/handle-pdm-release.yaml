@@ -27,9 +27,14 @@ jobs:
           git add pdm-version.txt
           git commit -am "New pdm version: $(cat pdm-version.txt)"
           git push
+        
+      - name: Read new version
+        id: get-version
+        if: ${{ steps.git-check.outputs.new_version }} == 'true'
+        run: echo 'version=$(cat pdm-version.txt)' >> $GITHUB_OUTPUT
 
       - name: Create release
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
         uses: ncipollo/release-action@v1
         with:
-          tag: $(cat pdm-version.txt)
+          tag: ${{ steps.get-version.outputs.version }}
