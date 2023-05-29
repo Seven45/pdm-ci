@@ -35,6 +35,8 @@ jobs:
 
       - name: Create release
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
-        uses: softprops/action-gh-release@v1
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          tag_name: ${{ steps.get-version.outputs.version }}
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: ${{ steps.get-version.outputs.version }}
+          prerelease: false
