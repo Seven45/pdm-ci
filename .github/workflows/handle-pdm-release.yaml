@@ -20,7 +20,7 @@ jobs:
           files: release-info.json
 
       - name: Commit latest release version
-        if: ${{ steps.check-files.outputs.files_changed }} == 'true'
+        if: steps.check-files.outputs.files_changed == 'true'
         run: |
           git config --global user.name 'Semyon Dubrovin'
           git config --global user.email 'seven45@mail.ru'
@@ -29,7 +29,7 @@ jobs:
           git push
 
       - name: Read new version data
-        if: ${{ steps.check-files.outputs.files_changed }} == 'true'
+        if: steps.check-files.outputs.files_changed == 'true'
         id: get-metadata
         run: |
           echo "name=$(cat release-info.json | jq -r '.name')" >> $GITHUB_OUTPUT
@@ -38,7 +38,7 @@ jobs:
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
 
       - name: Create release
-        if: ${{ steps.check-files.outputs.files_changed }} == 'true'
+        if: steps.check-files.outputs.files_changed == 'true'
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
