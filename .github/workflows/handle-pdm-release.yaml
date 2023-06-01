@@ -39,8 +39,8 @@ jobs:
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          title: "${{ steps.get-metadata.outputs.name }}"
-          automatic_release_tag: "${{ steps.get-metadata.outputs.version }}"
-          draft: "${{ steps.get-metadata.outputs.draft }}"
-          prerelease: "${{ steps.get-metadata.outputs.prerelease }}"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          title: ${{ steps.get-metadata.outputs.name }}
+          automatic_release_tag: ${{ steps.get-metadata.outputs.version }}
+          draft: ${{ steps.get-metadata.outputs.draft }}
+          prerelease: ${{ steps.get-metadata.outputs.prerelease }}
