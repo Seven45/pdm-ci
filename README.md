@@ -85,8 +85,10 @@ linters:
     - pdm run test_cov
   coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
   artifacts:
-    paths:
-      - coverage.xml
+  reports:
+    coverage_report:
+      coverage_format: cobertura
+      path: coverage.xml
 ```
 
 
