@@ -10,12 +10,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Fetch release version
+      - name: Fetch release info
         run: curl -sL https://api.github.com/repos/pdm-project/pdm/releases/latest > release-info.json
 
       - name: Check for modified files
         id: git-check
-        run: echo 'new_version=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")' >> $GITHUB_OUTPUT
+        run: echo 'new_version=$([ -z "`git status release-info.json --porcelain`" ] && echo "false" || echo "true")' >> $GITHUB_OUTPUT
 
       - name: Commit latest release version
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
