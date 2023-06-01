@@ -24,7 +24,7 @@ jobs:
           git config --global user.email 'seven45@mail.ru'
           git add release-info.json
           git commit -am "fix: upgrade pdm version"
-          git push
+          git push || true
 
       - name: Read new version data
         id: get-metadata
