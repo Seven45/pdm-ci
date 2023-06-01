@@ -13,22 +13,23 @@ jobs:
       - name: Fetch release info
         run: curl -sL https://api.github.com/repos/pdm-project/pdm/releases/latest > release-info.json
 
-      - name: Check for modified files
-        id: git-check
-        run: echo 'new_version=$([ -z "`git status release-info.json --porcelain`" ] && echo "false" || echo "true")' >> $GITHUB_OUTPUT
+      - name: Check modified files
+        uses: tj-actions/verify-changed-files@v14
+        id: check-files
+        files: release-info.json
 
       - name: Commit latest release version
-        if: ${{ steps.git-check.outputs.new_version }} == true
+        if: ${{ steps.check-files.outputs.files_changed }} == 'true'
         run: |
           git config --global user.name 'Semyon Dubrovin'
           git config --global user.email 'seven45@mail.ru'
           git add release-info.json
-          git commit -am "fix: upgrade pdm version"
-          git push || true
+          git commit -m "fix: upgrade pdm version"
+          git push
 
       - name: Read new version data
+        if: ${{ steps.check-files.outputs.files_changed }} == 'true'
         id: get-metadata
-        if: ${{ steps.git-check.outputs.new_version }} == true
         run: |
           echo "name=$(cat release-info.json | jq -r '.name')" >> $GITHUB_OUTPUT
           echo "version=$(cat release-info.json | jq -r '.tag_name')" >> $GITHUB_OUTPUT
@@ -36,7 +37,7 @@ jobs:
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
 
       - name: Create release
-        if: ${{ steps.git-check.outputs.new_version }} == true
+        if: ${{ steps.check-files.outputs.files_changed }} == 'true'
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
