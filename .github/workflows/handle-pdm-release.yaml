@@ -11,9 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Fetch release version
-        run: |
-          curl -sL https://api.github.com/repos/pdm-project/pdm/releases/latest | \
-          jq -r ".tag_name" > pdm-version.txt
+        run: curl -sL https://api.github.com/repos/pdm-project/pdm/releases/latest > release-info.json
 
       - name: Check for modified files
         id: git-check
@@ -24,19 +22,25 @@ jobs:
         run: |
           git config --global user.name 'Semyon Dubrovin'
           git config --global user.email 'seven45@mail.ru'
-          git add pdm-version.txt
-          git commit -am "New pdm version: $(cat pdm-version.txt)"
+          git add release-info.json
+          git commit -am "fix: upgrade pdm version"
           git push
-        
-      - name: Read new version
-        id: get-version
+
+      - name: Read new version data
+        id: get-metadata
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
-        run: echo 'version=$(cat pdm-version.txt)' >> $GITHUB_OUTPUT
+        run: |
+          echo 'name=$(cat release-info.json | jq ".name")' >> $GITHUB_OUTPUT
+          echo 'version=$(cat release-info.json | jq ".tag_name")' >> $GITHUB_OUTPUT
+          echo 'draft=$(cat release-info.json | jq ".draft")' >> $GITHUB_OUTPUT
+          echo 'prerelease=$(cat release-info.json | jq ".prerelease")' >> $GITHUB_OUTPUT
 
       - name: Create release
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: ${{ steps.get-version.outputs.version }}
-          prerelease: false
+          title: "${{ steps.get-metadata.outputs.name }}"
+          automatic_release_tag: "${{ steps.get-metadata.outputs.version }}"
+          draft: "${{ steps.get-metadata.outputs.draft }}"
+          prerelease: "${{ steps.get-metadata.outputs.prerelease }}"
