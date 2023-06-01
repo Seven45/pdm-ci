@@ -1,9 +1,7 @@
 name: Publish image to dockerhub
 on:
-  workflow_run:
-    workflows: [Check original pdm release]
-    types:
-      - completed
+  release:
+    types: [created]
 jobs:
   rebuild_python_image:
     name: Push image to dockerhub
@@ -12,9 +10,6 @@ jobs:
       matrix:
         base_tag: ["3.7", "3.7-slim", "3.7-alpine", "3.8", "3.8-slim", "3.8-alpine", "3.9", "3.9-slim", "3.9-alpine", "3.10", "3.10-slim", "3.10-alpine", "3.11", "3.11-slim", "3.11-alpine"]
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v3
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       
@@ -27,12 +22,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v4
-        with:
-          images: my-docker-hub-namespace/my-docker-hub-repository
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
@@ -41,4 +30,3 @@ jobs:
           build-args: PYTHON_VERSION=${{ matrix.base_tag }}
           push: true
           tags: seven45/pdm-ci:${{ matrix.base_tag }}
-          labels: ${{ steps.meta.outputs.labels }}
