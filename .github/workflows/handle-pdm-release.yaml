@@ -30,10 +30,10 @@ jobs:
         id: get-metadata
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
         run: |
-          echo 'name=$(cat release-info.json | jq ".name")' >> $GITHUB_OUTPUT
-          echo 'version=$(cat release-info.json | jq ".tag_name")' >> $GITHUB_OUTPUT
-          echo 'draft=$(cat release-info.json | jq ".draft")' >> $GITHUB_OUTPUT
-          echo 'prerelease=$(cat release-info.json | jq ".prerelease")' >> $GITHUB_OUTPUT
+          echo "name=$(cat release-info.json | jq '.name')" >> $GITHUB_OUTPUT
+          echo "version=$(cat release-info.json | jq '.tag_name')" >> $GITHUB_OUTPUT
+          echo "draft=$(cat release-info.json | jq '.draft')" >> $GITHUB_OUTPUT
+          echo "prerelease=$(cat release-info.json | jq '.prerelease')" >> $GITHUB_OUTPUT
 
       - name: Create release
         if: ${{ steps.git-check.outputs.new_version }} == 'true'
