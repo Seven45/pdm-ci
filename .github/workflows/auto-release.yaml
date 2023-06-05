@@ -8,7 +8,7 @@ jobs:
     name: Create release if found new pdm-version on original repo
     runs-on: ubuntu-latest
     outputs:
-      new_release: ${{ steps.check-files.outputs.files_changed }}
+      release_id: ${{ steps.create-release.outputs.id }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -23,7 +23,6 @@ jobs:
           files: release-info.json
 
       - name: Commit latest release version
-        id: commit-release-info
         if: steps.check-files.outputs.files_changed == 'true'
         run: |
           git config --global user.name 'Semyon Dubrovin'
@@ -37,18 +36,20 @@ jobs:
         if: steps.check-files.outputs.files_changed == 'true'
         run: |
           echo "name=$(cat release-info.json | jq -r '.name')" >> $GITHUB_OUTPUT
-          echo "version=$(cat release-info.json | jq -r '.tag_name')" >> $GITHUB_OUTPUT
+          echo "body=$(cat release-info.json | jq -r '.body')" >> $GITHUB_OUTPUT
           echo "draft=$(cat release-info.json | jq -r '.draft')" >> $GITHUB_OUTPUT
+          echo "tag_name=$(cat release-info.json | jq -r '.tag_name')" >> $GITHUB_OUTPUT
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
 
       - name: Create release
+        id: create-release
         if: steps.check-files.outputs.files_changed == 'true'
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: softprops/action-gh-release@v1
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          title: ${{ steps.read-metadata.outputs.name }}
-          automatic_release_tag: ${{ steps.read-metadata.outputs.version }}
+          name: ${{ steps.read-metadata.outputs.name }}
+          body: ${{ steps.read-metadata.outputs.body }}
           draft: ${{ steps.read-metadata.outputs.draft }}
+          tag_name: ${{ steps.read-metadata.outputs.tag_name }}
           prerelease: ${{ steps.read-metadata.outputs.prerelease }}
 
 
@@ -61,26 +62,24 @@ jobs:
         python_tag: ["3.7", "3.7-slim", "3.7-alpine", "3.8", "3.8-slim", "3.8-alpine", "3.9", "3.9-slim", "3.9-alpine", "3.10", "3.10-slim", "3.10-alpine", "3.11", "3.11-slim", "3.11-alpine"]
     steps:
       - name: Set up QEMU
-        if: needs.check-release.outputs.new_release == 'true'
+        if: needs.check-release.outputs
         uses: docker/setup-qemu-action@v2
 
       - name: Set up Docker Buildx
-        if: needs.check-release.outputs.new_release == 'true'
+        if: needs.check-release.outputs
         uses: docker/setup-buildx-action@v2
 
       - name: Log in to Docker Hub
-        if: needs.check-release.outputs.new_release == 'true'
+        if: needs.check-release.outputs
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build and push Docker image
-        if: needs.check-release.outputs.new_release == 'true'
+        if: needs.check-release.outputs
         uses: docker/build-push-action@v4
         with:
-          context: .
-          file: ./Dockerfile
           build-args: PYTHON_VERSION=${{ matrix.python_tag }}
           push: true
           tags: seven45/pdm-ci:${{ matrix.python_tag }}
