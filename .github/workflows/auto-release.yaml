@@ -51,7 +51,7 @@ jobs:
   rebuild-image:
     name: Push image to dockerhub
     needs: get-version
-    if: jobs.get-version.steps.check-files.outputs.files_changed == 'true'
+    if: get-version.steps.check-files.outputs.files_changed == 'true'
     runs-on: ubuntu-latest
     strategy:
       matrix:
