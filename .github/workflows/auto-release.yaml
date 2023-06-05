@@ -39,8 +39,8 @@ jobs:
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
 
       - name: Create release
-        if: steps.check-files.outputs.files_changed == 'true'
         needs: read-metadata
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           title: ${{ steps.get-metadata.outputs.name }}
