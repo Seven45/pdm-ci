@@ -1,9 +1,9 @@
-name: Publish pdm image
+name: publish-image
 on:
   schedule:
     - cron:  '0 12 * * *'
 jobs:
-  get-release:
+  check-release:
     uses: ./.github/workflows/check-release.yaml
   publish-image:
     needs: check-release.get-metadata.outputs.version

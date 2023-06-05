@@ -1,4 +1,4 @@
-name: Search new pdm release
+name: check-release
 on: [workflow_call]
 jobs:
   check-release:
