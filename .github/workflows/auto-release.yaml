@@ -46,10 +46,10 @@ jobs:
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          title: ${{ steps.get-metadata.outputs.name }}
-          automatic_release_tag: ${{ steps.get-metadata.outputs.version }}
-          draft: ${{ steps.get-metadata.outputs.draft }}
-          prerelease: ${{ steps.get-metadata.outputs.prerelease }}
+          title: ${{ steps.read-metadata.outputs.name }}
+          automatic_release_tag: ${{ steps.read-metadata.outputs.version }}
+          draft: ${{ steps.read-metadata.outputs.draft }}
+          prerelease: ${{ steps.read-metadata.outputs.prerelease }}
 
 
   publish-image:
