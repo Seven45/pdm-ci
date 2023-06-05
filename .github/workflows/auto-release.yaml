@@ -1,9 +1,11 @@
-name: check-release
+name: Daily auto release
 on: [workflow_call]
 jobs:
   check-release:
     name: Create release if found new pdm-version on original repo
     runs-on: ubuntu-latest
+    outputs:
+      new_release: ${{ steps.check-files.outputs.files_changed }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -18,6 +20,7 @@ jobs:
           files: release-info.json
 
       - name: Commit latest release version
+        id: commit-release-info
         if: steps.check-files.outputs.files_changed == 'true'
         run: |
           git config --global user.name 'Semyon Dubrovin'
@@ -27,8 +30,8 @@ jobs:
           git push
 
       - name: Read new version data
-        if: steps.check-files.outputs.files_changed == 'true'
-        id: get-metadata
+        needs: commit-release-info
+        id: read-metadata
         run: |
           echo "name=$(cat release-info.json | jq -r '.name')" >> $GITHUB_OUTPUT
           echo "version=$(cat release-info.json | jq -r '.tag_name')" >> $GITHUB_OUTPUT
@@ -37,10 +40,45 @@ jobs:
 
       - name: Create release
         if: steps.check-files.outputs.files_changed == 'true'
-        uses: "marvinpinto/action-automatic-releases@latest"
+        needs: read-metadata
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           title: ${{ steps.get-metadata.outputs.name }}
           automatic_release_tag: ${{ steps.get-metadata.outputs.version }}
           draft: ${{ steps.get-metadata.outputs.draft }}
           prerelease: ${{ steps.get-metadata.outputs.prerelease }}
+
+
+  publish-image:
+    needs: check-release
+    strategy:
+      matrix:
+        python_tag: ["3.7", "3.7-slim", "3.7-alpine", "3.8", "3.8-slim", "3.8-alpine", "3.9", "3.9-slim", "3.9-alpine", "3.10", "3.10-slim", "3.10-alpine", "3.11", "3.11-slim", "3.11-alpine"]
+
+    - name: Set up QEMU
+      id: setup-qemu
+      if: ${{ needs.check-release.output.new_release }} == 'true'
+      uses: docker/setup-qemu-action@v2
+
+    - name: Set up Docker Buildx
+      id: setup-docker
+      if: ${{ needs.check-release.output.new_release }} == 'true'
+      uses: docker/setup-buildx-action@v2
+
+    - name: Log in to Docker Hub
+      needs: [setup-qemu, setup-docker]
+      id: docker-login
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+    - name: Build and push Docker image
+      needs: docker-login
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        file: ./Dockerfile
+        build-args: PYTHON_VERSION=${{ matrix.python_tag }}
+        push: true
+        tags: seven45/pdm-ci:${{ matrix.python_tag }}
