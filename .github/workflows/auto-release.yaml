@@ -8,7 +8,7 @@ jobs:
     name: Create release if found new pdm-version on original repo
     runs-on: ubuntu-latest
     outputs:
-      new_release: ${{ steps.check-files.outputs.files_changed }}
+      version: ${{ steps.read-metadata.outputs.version }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -54,7 +54,7 @@ jobs:
 
   publish-image:
     name: Publish new image if release created
-    needs: check-release.commit-release-info
+    needs: check-release.outputs.version
     runs-on: ubuntu-latest
     strategy:
       matrix:
