@@ -33,8 +33,8 @@ jobs:
           git push
 
       - name: Read new version data
-        needs: commit-release-info
         id: read-metadata
+        if: steps.check-files.outputs.files_changed == 'true'
         run: |
           echo "name=$(cat release-info.json | jq -r '.name')" >> $GITHUB_OUTPUT
           echo "version=$(cat release-info.json | jq -r '.tag_name')" >> $GITHUB_OUTPUT
@@ -42,7 +42,7 @@ jobs:
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
 
       - name: Create release
-        needs: read-metadata
+        if: steps.check-files.outputs.files_changed == 'true'
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -61,24 +61,24 @@ jobs:
     steps:
       - name: Set up QEMU
         id: setup-qemu
-        if: ${{ needs.check-release.output.new_release }} == 'true'
+        if: ${{ needs.check-release.outputs.new_release }} == 'true'
         uses: docker/setup-qemu-action@v2
 
       - name: Set up Docker Buildx
         id: setup-docker
-        if: ${{ needs.check-release.output.new_release }} == 'true'
+        if: ${{ needs.check-release.outputs.new_release }} == 'true'
         uses: docker/setup-buildx-action@v2
 
       - name: Log in to Docker Hub
-        needs: [setup-qemu, setup-docker]
         id: docker-login
+        if: ${{ needs.check-release.outputs.new_release }} == 'true'
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build and push Docker image
-        needs: docker-login
+        if: ${{ needs.check-release.outputs.new_release }} == 'true'
         uses: docker/build-push-action@v4
         with:
           context: .
