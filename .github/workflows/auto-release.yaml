@@ -1,5 +1,8 @@
 name: Daily auto release
-on: [workflow_call]
+on:
+  schedule:
+    - cron:  '0 12 * * *'
+  workflow_dispatch:
 jobs:
   check-release:
     name: Create release if found new pdm-version on original repo
