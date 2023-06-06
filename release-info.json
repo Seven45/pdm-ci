@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/105159061",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/105159061/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/105159061/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.7.0",
-  "id": 105159061,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/107450223",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/107450223/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/107450223/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.7.1",
+  "id": 107450223,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4GRJmV",
-  "tag_name": "2.7.0",
-  "target_commitish": "168ddcdd648799cac9a4821039fb84939f96529c",
-  "name": "v2.7.0",
+  "node_id": "RE_kwDODbsoBs4GZ49v",
+  "tag_name": "2.7.1",
+  "target_commitish": "0415b6466f76600e0e72e7c8861a4ffbcef7f35f",
+  "name": "v2.7.1",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-05-29T04:10:49Z",
-  "published_at": "2023-05-29T04:11:51Z",
+  "created_at": "2023-06-06T03:55:45Z",
+  "published_at": "2023-06-06T03:56:45Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.7.0",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.7.0",
-  "body": "\n### Features & Improvements\n\n- When keyring is available, either by importing or by CLI, the credentials of repositories and PyPI indexes will be saved into it. [#1908](https://github.com/pdm-project/pdm/issues/1908)\n- Add support for reading metadata from simple index directly. [#1919](https://github.com/pdm-project/pdm/issues/1919)\n- Add a configuration to specify constant command arguments for every pdm invocation. [#1923](https://github.com/pdm-project/pdm/issues/1923)\n- Add ability to skip SSL verification for publish repositories via `repository.custom.verify_ssl` config option as well as new command line argument of `publish` command. [#1928](https://github.com/pdm-project/pdm/issues/1928)\n- Use lazy import to reduce the startup time of the CLI. [#1929](https://github.com/pdm-project/pdm/issues/1929)\n- Add the local plugin scripts to `PATH` env var. [#1944](https://github.com/pdm-project/pdm/issues/1944)\n\n### Bug Fixes\n\n- Don't use install cache when installing build requirements to avoid race condition. [#1869](https://github.com/pdm-project/pdm/issues/1869)\n- Fix a number of `ResourceWarning`s when running the test suite with warnings enabled. [#1915](https://github.com/pdm-project/pdm/issues/1915)\n- Fix a bug that dev-dependencies group gets updated with the optional dependencies, causing the hash mismatch. [#1916](https://github.com/pdm-project/pdm/issues/1916)\n- Fix format conversion error from Poetry when `tool.poetry.build` doesn't exist. [#1935](https://github.com/pdm-project/pdm/issues/1935)\n- Add timeout when fetching .gitignore from GitHub. [#1937](https://github.com/pdm-project/pdm/issues/1937)\n- Keep the variables in the URL credentials when exporting. [#1939](https://github.com/pdm-project/pdm/issues/1939)\n- Convert to boolean when setting verify_ssl for custom indexes. [#1945](https://github.com/pdm-project/pdm/issues/1945)\n- `pdm import` clobbers `build-system.requires` value in `pyproject.toml`. [#1948](https://github.com/pdm-project/pdm/issues/1948)\n\n### Documentation\n\n- Update publish.md to use run instead of runs to match GitHub Actions steps documentation [#1936](https://github.com/pdm-project/pdm/issues/1936)\n- Update advanced.md to use `pdm sync` instead of `pdm install --no-lock`. [#1947](https://github.com/pdm-project/pdm/issues/1947)\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.7.1",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.7.1",
+  "body": "\n### Features & Improvements\n\n- Switch HTTP data cache to use a split body setup, where the actual body contents are not written to disk unless changed. Previously, any changed headers would write the whole body to disk again. [#1971](https://github.com/pdm-project/pdm/issues/1971)\n- Show the specific install commands for different installations when checking update. This was removed before. [#1972](https://github.com/pdm-project/pdm/issues/1972)\n\n### Bug Fixes\n\n- PDM ignores env vars `PDM_PYPI_USERNAME` and `PDM_PYPI_PASSWORD` when there are no defaults in config. [#1961](https://github.com/pdm-project/pdm/issues/1961)\n- Guess the project name from VCS url if it is missing when importing from requirements.txt. [#1970](https://github.com/pdm-project/pdm/issues/1970)\n- Correctly read the config from environment variables. [#1977](https://github.com/pdm-project/pdm/issues/1977)\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/105159061/reactions",
-    "total_count": 5,
-    "+1": 2,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/107450223/reactions",
+    "total_count": 4,
+    "+1": 4,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 3,
+    "rocket": 0,
     "eyes": 0
   }
 }
