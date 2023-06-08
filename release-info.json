@@ -40,14 +40,14 @@
   "body": "\n### Features & Improvements\n\n- Switch HTTP data cache to use a split body setup, where the actual body contents are not written to disk unless changed. Previously, any changed headers would write the whole body to disk again. [#1971](https://github.com/pdm-project/pdm/issues/1971)\n- Show the specific install commands for different installations when checking update. This was removed before. [#1972](https://github.com/pdm-project/pdm/issues/1972)\n\n### Bug Fixes\n\n- PDM ignores env vars `PDM_PYPI_USERNAME` and `PDM_PYPI_PASSWORD` when there are no defaults in config. [#1961](https://github.com/pdm-project/pdm/issues/1961)\n- Guess the project name from VCS url if it is missing when importing from requirements.txt. [#1970](https://github.com/pdm-project/pdm/issues/1970)\n- Correctly read the config from environment variables. [#1977](https://github.com/pdm-project/pdm/issues/1977)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/107450223/reactions",
-    "total_count": 8,
-    "+1": 6,
+    "total_count": 12,
+    "+1": 7,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 1,
-    "rocket": 1,
+    "heart": 3,
+    "rocket": 2,
     "eyes": 0
   }
 }
