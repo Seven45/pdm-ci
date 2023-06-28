@@ -8,6 +8,7 @@ Your project's structure:
     - your files and folders
     - `__init__.py`
     - `__main__.py`
+    - `__version__.py` (optional)
   - `tests/`
   - `Dockerfile`
   - `pdm.lock`
