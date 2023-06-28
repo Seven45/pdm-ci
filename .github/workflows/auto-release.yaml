@@ -76,7 +76,7 @@ jobs:
           "3.10-buster",
           "3.11",
           "3.11-slim",
-          "3.11-alpine"
+          "3.11-alpine",
           "3.11-buster",
           ]
     steps:
