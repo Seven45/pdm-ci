@@ -57,7 +57,28 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python_tag: ["3.7", "3.7-slim", "3.7-alpine", "3.8", "3.8-slim", "3.8-alpine", "3.9", "3.9-slim", "3.9-alpine", "3.10", "3.10-slim", "3.10-alpine", "3.11", "3.11-slim", "3.11-alpine"]
+        python_tag: [
+          "3.7",
+          "3.7-slim",
+          "3.7-alpine",
+          "3.7-buster",
+          "3.8",
+          "3.8-slim",
+          "3.8-alpine",
+          "3.8-buster",
+          "3.9",
+          "3.9-slim",
+          "3.9-alpine",
+          "3.9-buster",
+          "3.10",
+          "3.10-slim",
+          "3.10-alpine",
+          "3.10-buster",
+          "3.11",
+          "3.11-slim",
+          "3.11-alpine"
+          "3.11-buster",
+          ]
     steps:
       - name: Set up QEMU
         if: needs.check-release.outputs.release_id
