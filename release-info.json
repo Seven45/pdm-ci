@@ -28,7 +28,7 @@
   "tag_name": "2.7.4",
   "target_commitish": "4b06c6a40f0b3026c2283a1362d44cf168dc3dae",
   "name": "v2.7.4",
-  "draft": true,
+  "draft": false,
   "prerelease": false,
   "created_at": "2023-06-13T04:44:43Z",
   "published_at": "2023-06-13T04:51:57Z",
