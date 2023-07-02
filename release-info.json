@@ -40,13 +40,13 @@
   "body": "### Bug Fixes\r\n\r\n- Fix the warning of extras not found due to extra names not normalized. [#2006](https://github.com/pdm-project/pdm/issues/2006)\r\n- Pop up a warning when the deprecated `parser` argument is passed to `BaseCommand.__init__()` method. [#2007](https://github.com/pdm-project/pdm/issues/2007)\r\n- Fix a bug that merging settings with AoTs causing a failure. [#2011](https://github.com/pdm-project/pdm/issues/2011)",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/108311282/reactions",
-    "total_count": 4,
+    "total_count": 5,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 4,
+    "heart": 5,
     "rocket": 0,
     "eyes": 0
   }
