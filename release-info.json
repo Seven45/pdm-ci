@@ -40,14 +40,14 @@
   "body": "\r\n### Features & Improvements\r\n\r\n- Support target python with other architectures. [#2078](https://github.com/pdm-project/pdm/issues/2078)\r\n- Display the help information when running pdm directly. [#2081](https://github.com/pdm-project/pdm/issues/2081)\r\n- Allow to change the python providers from the config. Support finding pythons from Rye installation location with the new findpython. [#2099](https://github.com/pdm-project/pdm/issues/2099)\r\n- Option to save static URLs in the lockfile. By default only filenames are saved. [#2101](https://github.com/pdm-project/pdm/issues/2101)\r\n\r\n### Bug Fixes\r\n\r\n- Fix a bug that egg-info directories are not removed completely, leading to incomplete distribution. [#2027](https://github.com/pdm-project/pdm/issues/2027)\r\n- Skip distributions with wrong package meta information and duplicate path. [#2075](https://github.com/pdm-project/pdm/issues/2075)\r\n- Avoid mistakenly passing command-line arguments while testing. [#2083](https://github.com/pdm-project/pdm/issues/2083)\r\n- Fix a bug that lockfile groups are overwritten when running locking in a preceding step of `pdm install`. [#2086](https://github.com/pdm-project/pdm/issues/2086)\r\n- Tolerate and actually ignore the local versions in version specifiers. [#2102](https://github.com/pdm-project/pdm/issues/2102)\r\n- Fix a bug that shared cache cannot support overlapping namespace packages. [#2105](https://github.com/pdm-project/pdm/issues/2105)\r\n\r\n### Documentation\r\n\r\n- Add notes about using custom venv path. [#2096](https://github.com/pdm-project/pdm/issues/2096)\r\n\r\n\r\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/112362784/reactions",
-    "total_count": 12,
+    "total_count": 13,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 7,
-    "rocket": 5,
+    "rocket": 6,
     "eyes": 0
   }
 }
