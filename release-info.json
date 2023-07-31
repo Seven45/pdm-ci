@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/113611088",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/113611088/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/113611088/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.8.1",
-  "id": 113611088,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/114439096",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/114439096/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/114439096/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.8.2",
+  "id": 114439096,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,18 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4GxZFQ",
-  "tag_name": "2.8.1",
-  "target_commitish": "439eb9b16d1461d1c7bb2e8f7b9bdd44b78e83dd",
-  "name": "v2.8.1",
+  "node_id": "RE_kwDODbsoBs4G0jO4",
+  "tag_name": "2.8.2",
+  "target_commitish": "bdcfd49686dbebd9004be5438d4d4ff8cdbefa09",
+  "name": "v2.8.2",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-07-26T05:33:44Z",
-  "published_at": "2023-07-26T05:35:11Z",
+  "created_at": "2023-07-31T06:36:32Z",
+  "published_at": "2023-07-31T06:42:22Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.8.1",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.8.1",
-  "body": "\n### Features & Improvements\n\n- Add `keyring`, `copier`, `cookiecutter`, `template`, `truststore` dependency groups. [#2109](https://github.com/pdm-project/pdm/issues/2109)\n- Ignore wheels for python versions not in range. [#2113](https://github.com/pdm-project/pdm/issues/2113)\n- Read default value from env var `PDM_PROJECT` for `-p/--project` option. [#2126](https://github.com/pdm-project/pdm/issues/2126)\n\n### Bug Fixes\n\n- Fix the comparison of the candidate keys in the lockfile. [#2120](https://github.com/pdm-project/pdm/issues/2120)\n- Don't update `pyproject.toml` if both `--unconstrained` and `--dry-run` are passed to `pdm update`. [#2125](https://github.com/pdm-project/pdm/issues/2125)\n- Overwrite the `build-system` table when importing from other package manager. [#2126](https://github.com/pdm-project/pdm/issues/2126)\n- Skip sources with empty URL when merging sources. [#2130](https://github.com/pdm-project/pdm/issues/2130)\n- Fix the invalid requirement converted from poetry metadata. [#2133](https://github.com/pdm-project/pdm/issues/2133)\n\n### Dependencies\n\n- Update `unearth` to 0.10.0 [#2113](https://github.com/pdm-project/pdm/issues/2113)\n\n\n",
-  "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/113611088/reactions",
-    "total_count": 15,
-    "+1": 6,
-    "-1": 0,
-    "laugh": 0,
-    "hooray": 0,
-    "confused": 0,
-    "heart": 5,
-    "rocket": 4,
-    "eyes": 0
-  }
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.8.2",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.8.2",
+  "body": "\n### Features & Improvements\n\n- Allow setting username and password in URL for publish command [#2140](https://github.com/pdm-project/pdm/issues/2140)\n\n### Bug Fixes\n\n- Use UTF-8 encoding when writing `sitecustomize.py`. [#2139](https://github.com/pdm-project/pdm/issues/2139)\n\n\n"
 }
