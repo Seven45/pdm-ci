@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/119727269",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/119727269/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/119727269/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.9.1",
-  "id": 119727269,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/120765605",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/120765605/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/120765605/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.9.2",
+  "id": 120765605,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,18 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4HIuSl",
-  "tag_name": "2.9.1",
-  "target_commitish": "a50604c3659caf0a0639d2aafa5cb54f15f04a01",
-  "name": "v2.9.1",
+  "node_id": "RE_kwDODbsoBs4HMryl",
+  "tag_name": "2.9.2",
+  "target_commitish": "a771ffc26e56999c9d3da0faddeebd16b7b396e1",
+  "name": "v2.9.2",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-09-03T07:04:39Z",
-  "published_at": "2023-09-03T07:05:47Z",
+  "created_at": "2023-09-12T09:41:20Z",
+  "published_at": "2023-09-12T09:46:15Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.9.1",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.9.1",
-  "body": "\n### Features & Improvements\n\n- Support convert setup.cfg without existing setup.py. [#2222](https://github.com/pdm-project/pdm/issues/2222)\n\n### Bug Fixes\n\n- `pdm run` should only find local file if the command starts with `./`. [#2221](https://github.com/pdm-project/pdm/issues/2221)\n\n\n",
-  "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/119727269/reactions",
-    "total_count": 11,
-    "+1": 4,
-    "-1": 0,
-    "laugh": 0,
-    "hooray": 3,
-    "confused": 0,
-    "heart": 2,
-    "rocket": 2,
-    "eyes": 0
-  }
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.9.2",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.9.2",
+  "body": "\n### Features & Improvements\n\n- Fix an issue that `--no-lock` option doesn't work as expected. Also support `--no-lock` option for `add`, `remove` and `update` commands. [#2245](https://github.com/pdm-project/pdm/issues/2245)\n\n### Bug Fixes\n\n- Use `findpython` to find pythons with the spec given by the user. [#2225](https://github.com/pdm-project/pdm/issues/2225)\n- Use UTF-8 to read pyvenv.cfg. [#2227](https://github.com/pdm-project/pdm/issues/2227)\n- On Windows, try looking for the `virtualenv` `python.exe` binary under `bin/`\n  as well as `Scripts/` and the `virtualenv`/`conda` root. [#2236](https://github.com/pdm-project/pdm/issues/2236)\n- Write relocatable dependency URLs with `${PROJECT_ROOT}` variable in the lockfile. [#2240](https://github.com/pdm-project/pdm/issues/2240)\n\n\n"
 }
