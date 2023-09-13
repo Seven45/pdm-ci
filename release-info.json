@@ -37,5 +37,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.9.2",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.9.2",
-  "body": "\n### Features & Improvements\n\n- Fix an issue that `--no-lock` option doesn't work as expected. Also support `--no-lock` option for `add`, `remove` and `update` commands. [#2245](https://github.com/pdm-project/pdm/issues/2245)\n\n### Bug Fixes\n\n- Use `findpython` to find pythons with the spec given by the user. [#2225](https://github.com/pdm-project/pdm/issues/2225)\n- Use UTF-8 to read pyvenv.cfg. [#2227](https://github.com/pdm-project/pdm/issues/2227)\n- On Windows, try looking for the `virtualenv` `python.exe` binary under `bin/`\n  as well as `Scripts/` and the `virtualenv`/`conda` root. [#2236](https://github.com/pdm-project/pdm/issues/2236)\n- Write relocatable dependency URLs with `${PROJECT_ROOT}` variable in the lockfile. [#2240](https://github.com/pdm-project/pdm/issues/2240)\n\n\n"
+  "body": "\n### Features & Improvements\n\n- Fix an issue that `--no-lock` option doesn't work as expected. Also support `--no-lock` option for `add`, `remove` and `update` commands. [#2245](https://github.com/pdm-project/pdm/issues/2245)\n\n### Bug Fixes\n\n- Use `findpython` to find pythons with the spec given by the user. [#2225](https://github.com/pdm-project/pdm/issues/2225)\n- Use UTF-8 to read pyvenv.cfg. [#2227](https://github.com/pdm-project/pdm/issues/2227)\n- On Windows, try looking for the `virtualenv` `python.exe` binary under `bin/`\n  as well as `Scripts/` and the `virtualenv`/`conda` root. [#2236](https://github.com/pdm-project/pdm/issues/2236)\n- Write relocatable dependency URLs with `${PROJECT_ROOT}` variable in the lockfile. [#2240](https://github.com/pdm-project/pdm/issues/2240)\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/120765605/reactions",
+    "total_count": 3,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 2,
+    "eyes": 0
+  }
 }
