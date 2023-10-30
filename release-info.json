@@ -40,14 +40,14 @@
   "body": "> **Note**\r\n> This is the last minor release that supports installing on Python 3.7. \r\nPlease upgrade your Python to 3.8 or higher.\r\n\r\n### Features & Improvements\r\n\r\n- Allow binding packages to specific sources with `include_packages` and `exclude_packages` config under `tool.pdm.source` table. [#1645](https://github.com/pdm-project/pdm/issues/1645)\r\n- Show warnings when a package is rejected by the resolve because of uncovered `requires-python` range. And provide a way to ignore them per-package. [#2304](https://github.com/pdm-project/pdm/issues/2304)\r\n- Add `-q/--quiet` option to suppress some warnings printed to the console. This option is mutually exclusive with `-v/--verbose`. [#2304](https://github.com/pdm-project/pdm/issues/2304)\r\n- Introduce a new `--strategy/-S` option for `lock` command, to specify one or more strategy flags for resolving dependencies. `--static-urls` and `--no-cross-platform` are deprecated at the same time. [#2310](https://github.com/pdm-project/pdm/issues/2310)\r\n- Add lock option to resolve direct dependencies to the minimal versions available. [#2310](https://github.com/pdm-project/pdm/issues/2310)\r\n- Report the progress of download and unpacking when installing packages. [#2328](https://github.com/pdm-project/pdm/issues/2328)\r\n- Refactor `find_project_root()` and `find_pypackage()` to look for the project root recursively, and remove the `project_max_depth` configuration variable and the corresponding `PDM_PROJECT_MAX_DEPTH` environment variable. [#2286](https://github.com/pdm-project/pdm/issues/2286)\r\n\r\n### Bug Fixes\r\n\r\n- Change the venv backend clean function `pdm.cli.commands.venv.backend.Backend._ensure_clean` to empty the `.venv` folder instead of deleting it. [#2282](https://github.com/pdm-project/pdm/issues/2282)\r\n- Fix a bug that dependency groups from Poetry 1.2+ do not migrate properly to PDM. [#2285](https://github.com/pdm-project/pdm/issues/2285)\r\n- Fix a bug that build requirements are installed into wrong location when using `--venv` option. [#2314](https://github.com/pdm-project/pdm/issues/2314)\r\n- Fix a bug that global repository setting results in TypeError . [#2330](https://github.com/pdm-project/pdm/issues/2330)\r\n- Fix a credentials error when working with two indices on the same host [#2333](https://github.com/pdm-project/pdm/issues/2333)\r\n\r\n### Miscellany\r\n\r\n- Officially supports python3.12 now. [#2301](https://github.com/pdm-project/pdm/issues/2301)\r\n\r\n\r\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/126700573/reactions",
-    "total_count": 9,
+    "total_count": 10,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 8,
     "confused": 0,
     "heart": 0,
-    "rocket": 1,
+    "rocket": 2,
     "eyes": 0
   }
 }
