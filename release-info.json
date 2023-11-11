@@ -40,14 +40,14 @@
   "body": "\n### Bug Fixes\n\n- Fix a bug preventing ctrl-c from interrupting program execution on 2nd invocation when using \"pdm run\" (Windows only). [#2292](https://github.com/pdm-project/pdm/issues/2292)\n- Fix list index out of range when build error message is empty. [#2337](https://github.com/pdm-project/pdm/issues/2337)\n- Fix find_link sources being exported as `--extra--index-url` [#2342](https://github.com/pdm-project/pdm/issues/2342)\n- Fix an installation failure when install.cache = true. [#2355](https://github.com/pdm-project/pdm/issues/2355)\n- Fix a resolution issue that extra dependencies are not resolved when the bare dependency has more specific version constraint. [#2369](https://github.com/pdm-project/pdm/issues/2369)\n\n### Documentation\n\n- Set up a chatbot powered by LLM on the doc page. [#2365](https://github.com/pdm-project/pdm/issues/2365)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/128238581/reactions",
-    "total_count": 10,
-    "+1": 0,
+    "total_count": 12,
+    "+1": 1,
     "-1": 0,
     "laugh": 0,
     "hooray": 8,
     "confused": 0,
     "heart": 0,
-    "rocket": 2,
+    "rocket": 3,
     "eyes": 0
   }
 }
