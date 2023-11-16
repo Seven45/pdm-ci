@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/128238581",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/128238581/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/128238581/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.10.1",
-  "id": 128238581,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/129720828",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/129720828/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/129720828/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.10.3",
+  "id": 129720828,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,18 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4HpMP1",
-  "tag_name": "2.10.1",
-  "target_commitish": "90aadf0bd1059241b31235bd2d88e329cafeaac3",
-  "name": "v2.10.1",
+  "node_id": "RE_kwDODbsoBs4Hu2H8",
+  "tag_name": "2.10.3",
+  "target_commitish": "d498f8e08bebd1b359a34e8c64dc31ca4026ace2",
+  "name": "v2.10.3",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-11-07T00:50:51Z",
-  "published_at": "2023-11-07T00:52:01Z",
+  "created_at": "2023-11-16T12:12:49Z",
+  "published_at": "2023-11-16T12:14:02Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.10.1",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.10.1",
-  "body": "\n### Bug Fixes\n\n- Fix a bug preventing ctrl-c from interrupting program execution on 2nd invocation when using \"pdm run\" (Windows only). [#2292](https://github.com/pdm-project/pdm/issues/2292)\n- Fix list index out of range when build error message is empty. [#2337](https://github.com/pdm-project/pdm/issues/2337)\n- Fix find_link sources being exported as `--extra--index-url` [#2342](https://github.com/pdm-project/pdm/issues/2342)\n- Fix an installation failure when install.cache = true. [#2355](https://github.com/pdm-project/pdm/issues/2355)\n- Fix a resolution issue that extra dependencies are not resolved when the bare dependency has more specific version constraint. [#2369](https://github.com/pdm-project/pdm/issues/2369)\n\n### Documentation\n\n- Set up a chatbot powered by LLM on the doc page. [#2365](https://github.com/pdm-project/pdm/issues/2365)\n\n\n",
-  "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/128238581/reactions",
-    "total_count": 12,
-    "+1": 1,
-    "-1": 0,
-    "laugh": 0,
-    "hooray": 8,
-    "confused": 0,
-    "heart": 0,
-    "rocket": 3,
-    "eyes": 0
-  }
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.10.3",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.10.3",
+  "body": "\n### Bug Fixes\n\n- Create virtualenv for conda base Python. [#2409](https://github.com/pdm-project/pdm/issues/2409)\n\n\n"
 }
