@@ -37,5 +37,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.10.3",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.10.3",
-  "body": "\n### Bug Fixes\n\n- Create virtualenv for conda base Python. [#2409](https://github.com/pdm-project/pdm/issues/2409)\n\n\n"
+  "body": "\n### Bug Fixes\n\n- Create virtualenv for conda base Python. [#2409](https://github.com/pdm-project/pdm/issues/2409)\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/129720828/reactions",
+    "total_count": 2,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
