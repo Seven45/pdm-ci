@@ -40,14 +40,14 @@
   "body": "\n### Bug Fixes\n\n- Update candidate names before resolving markers, to fix a KeyError when the requirement is not named. [#2488](https://github.com/pdm-project/pdm/issues/2488)\n- Fix a KeyError when resolving packages that have parents that are no longer needed. [#2489](https://github.com/pdm-project/pdm/issues/2489)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/133921317/reactions",
-    "total_count": 3,
+    "total_count": 4,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 3,
+    "rocket": 4,
     "eyes": 0
   }
 }
