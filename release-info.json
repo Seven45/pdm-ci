@@ -40,11 +40,11 @@
   "body": "\n### Bug Fixes\n\n- Fix a KeyError raised when resolving a URL dependency without package name given. [#2488](https://github.com/pdm-project/pdm/issues/2488)\n- `pdm update --update-eager` can hit InconsistentCandidate error when dependency is included both through default dependencies and extra. [#2495](https://github.com/pdm-project/pdm/issues/2495)\n- `pdm install` should not warn when overwriting its own symlinks on `install`/`update`. [#2502](https://github.com/pdm-project/pdm/issues/2502)\n- Fix a bug that candidates without local version are rejected when the local version is pinned. [#2507](https://github.com/pdm-project/pdm/issues/2507)\n\n### Documentation\n\n- Add maturin as a compatible build backend in the docs. [#2510](https://github.com/pdm-project/pdm/issues/2510)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/135503716/reactions",
-    "total_count": 14,
+    "total_count": 15,
     "+1": 2,
     "-1": 0,
     "laugh": 0,
-    "hooray": 11,
+    "hooray": 12,
     "confused": 0,
     "heart": 0,
     "rocket": 1,
