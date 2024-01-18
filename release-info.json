@@ -40,14 +40,14 @@
   "body": "\n### Bug Fixes\n\n- Hotfix: missing `identifier` attribute for package type fixer. [#2564](https://github.com/pdm-project/pdm/issues/2564)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/137328961/reactions",
-    "total_count": 5,
+    "total_count": 6,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 5,
+    "rocket": 6,
     "eyes": 0
   }
 }
