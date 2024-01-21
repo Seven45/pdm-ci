@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/137328961",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/137328961/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/137328961/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.12.1",
-  "id": 137328961,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/137860803",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/137860803/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/137860803/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.12.2",
+  "id": 137860803,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4IL3lB",
-  "tag_name": "2.12.1",
-  "target_commitish": "36a0e2b6641f996904030840c1ce433c28ab11c3",
-  "name": "v2.12.1",
+  "node_id": "RE_kwDODbsoBs4IN5bD",
+  "tag_name": "2.12.2",
+  "target_commitish": "01f6a8d505cc2e80a205f9190122d0bfd66d34d6",
+  "name": "v2.12.2",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-01-17T05:21:16Z",
-  "published_at": "2024-01-17T05:22:18Z",
+  "created_at": "2024-01-20T22:56:42Z",
+  "published_at": "2024-01-20T22:57:51Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.12.1",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.12.1",
-  "body": "\n### Bug Fixes\n\n- Hotfix: missing `identifier` attribute for package type fixer. [#2564](https://github.com/pdm-project/pdm/issues/2564)\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.12.2",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.12.2",
+  "body": "\n### Bug Fixes\n\n- Fix the auto fixer for package-type. [#2564](https://github.com/pdm-project/pdm/issues/2564)\n- Fix the wrong installation destination for header files when installing build requirements. [#2573](https://github.com/pdm-project/pdm/issues/2573)\n- Install header files into package namespace under `include` directory. [#2574](https://github.com/pdm-project/pdm/issues/2574)\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/137328961/reactions",
-    "total_count": 6,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/137860803/reactions",
+    "total_count": 5,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
-    "rocket": 6,
+    "heart": 4,
+    "rocket": 1,
     "eyes": 0
   }
 }
