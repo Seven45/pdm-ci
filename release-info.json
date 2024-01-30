@@ -40,13 +40,13 @@
   "body": "\n### Bug Fixes\n\n- Fix the auto fixer for package-type. [#2564](https://github.com/pdm-project/pdm/issues/2564)\n- Fix the wrong installation destination for header files when installing build requirements. [#2573](https://github.com/pdm-project/pdm/issues/2573)\n- Install header files into package namespace under `include` directory. [#2574](https://github.com/pdm-project/pdm/issues/2574)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/137860803/reactions",
-    "total_count": 12,
+    "total_count": 13,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 7,
+    "heart": 8,
     "rocket": 5,
     "eyes": 0
   }
