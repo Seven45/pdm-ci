@@ -40,14 +40,14 @@
   "body": "\n### Bug Fixes\n\n- fix the package-type fixer won't update toml properly for \"Nested Section Ordering Issue in TOML\". [#2578](https://github.com/pdm-project/pdm/issues/2578)\n- Unable to force override a package if the package is required with extras. [#2586](https://github.com/pdm-project/pdm/issues/2586)\n- Failed to clone template repository if the URL contains the rev part. [#2597](https://github.com/pdm-project/pdm/issues/2597)\n- Handle legacy specifiers when converting from poetry project. [#2599](https://github.com/pdm-project/pdm/issues/2599)\n\n### Documentation\n\n- Fix typo in template docs [#2588](https://github.com/pdm-project/pdm/issues/2588)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/139434537/reactions",
-    "total_count": 5,
+    "total_count": 7,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 5,
+    "rocket": 7,
     "eyes": 0
   }
 }
