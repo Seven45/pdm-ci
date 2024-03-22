@@ -40,8 +40,8 @@
   "body": "\n### Features & Improvements\n\n- Use env PDM_NO_EDITABLE as the default value for --no-editable option. [#2613](https://github.com/pdm-project/pdm/issues/2613)\n\n### Bug Fixes\n\n- Reset project.environment when importing from setup.py, to fix resolution error. [#2608](https://github.com/pdm-project/pdm/issues/2608)\n- Do not fetch package hashes when `--frozen-lockfile` is passed. [#2630](https://github.com/pdm-project/pdm/issues/2630)\n- Make sure non-venv interpreters are used by venv creator. [#2631](https://github.com/pdm-project/pdm/issues/2631)\n- Don't cause a hard failure if the local directory doesn't exist. [#2650](https://github.com/pdm-project/pdm/issues/2650)\n\n### Documentation\n\n- Fix the default value for negative CLI flags. [#2642](https://github.com/pdm-project/pdm/issues/2642)\n- Auto-gen configuration reference documentation. [#2645](https://github.com/pdm-project/pdm/issues/2645)\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/143550516/reactions",
-    "total_count": 12,
-    "+1": 6,
+    "total_count": 13,
+    "+1": 7,
     "-1": 0,
     "laugh": 0,
     "hooray": 3,
