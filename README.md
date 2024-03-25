@@ -6,6 +6,8 @@ Your project's structure:
 - my_project/ (workdir)
   - `src/`
     - your files and folders here
+    - `__init__.py`
+    - `__main__.py`
   - `tests/`
   - `Dockerfile`
   - `pdm.lock`
@@ -51,6 +53,7 @@ lint = {composite = ["ruff format src tests", "ruff check src tests --fix"]}
 lint_check = {composite = ["ruff format src tests --check", "ruff check src tests"]}
 test = "pytest -vvv -s tests"
 test_cov = "pytest --cov-branch --cov-report=xml --cov=src tests"
+
 ...
 ```
 
@@ -61,13 +64,13 @@ stages:
   - lint
   - test
 
-linters:
+ruff:
   stage: lint
   image: seven45/pdm-ci:3.10-alpine
   only: [ "merge_requests" ]
   script:
     - pdm install --no-default -G linting
-    - pdm run lint
+    - pdm run lint_check
   cache:
     paths: [ ".venv" ]
     key:
@@ -97,7 +100,9 @@ linters:
 
 ## Pre-commit hooks
 
-```
+`pre-commit-config.yaml`:
+
+```yaml
 repos:
   - repo: local
     hooks:
