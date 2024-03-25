@@ -5,10 +5,7 @@
 Your project's structure:
 - my_project/ (workdir)
   - `src/`
-    - your files and folders
-    - `__init__.py`
-    - `__main__.py`
-    - `__version__.py` (optional)
+    - your files and folders here
   - `tests/`
   - `Dockerfile`
   - `pdm.lock`
@@ -44,21 +41,16 @@ CMD ["python", "src/__main__.py"]
 ...
 
 [tool.pdm.dev-dependencies]
-testing = ["pytest-cov>=4.0.0"]
+testing = ["pytest-cov>=5.0.0"]
 linting = [
-    "setuptools>=65.6.3",
-    "black>=22.12.0",
-    "isort>=5.11.4",
-    "flake8-pyproject>=1.2.2"
+    "ruff>=0.3.4",
 ]
 
 [tool.pdm.scripts]
-lint = {composite = ["black src tests", "isort src tests", "flake8p src tests"]}
-lint_check = {composite = ["black src tests --check", "isort src tests --check-only", "flake8p src tests"]}
+lint = {composite = ["ruff format src tests", "ruff check src tests --fix"]}
+lint_check = {composite = ["ruff format src tests --check", "ruff check src tests"]}
 test = "pytest -vvv -s tests"
 test_cov = "pytest --cov-branch --cov-report=xml --cov=src tests"
-test_file = "pytest -s -vv ./{args}"
-test_all = {composite = ["test", "lint_check"]}
 ...
 ```
 
@@ -76,6 +68,11 @@ linters:
   script:
     - pdm install --no-default -G linting
     - pdm run lint
+  cache:
+    paths: [ ".venv" ]
+    key:
+      prefix: venv_lint
+      files: [ "pdm.lock" ]
  
  pytest:
   stage: test
@@ -90,6 +87,25 @@ linters:
       coverage_report:
         coverage_format: cobertura
         path: coverage.xml
+  cache:
+    paths: [ ".venv" ]
+    key:
+      prefix: venv_test
+      files: [ "pdm.lock" ]
+```
+
+
+## Pre-commit hooks
+
+```
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff format and lint
+        language: system
+        types: [python]
+        entry: pdm run lint_check
 ```
 
 
