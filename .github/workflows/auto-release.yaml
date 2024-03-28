@@ -39,7 +39,6 @@ jobs:
           echo "tag_name=$(cat release-info.json | jq -r '.tag_name')" >> $GITHUB_OUTPUT
           echo "draft=$(cat release-info.json | jq -r '.draft')" >> $GITHUB_OUTPUT
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
-          echo "body=$(cat release-info.json | jq -r '.body')" >> $GITHUB_OUTPUT
 
       - name: Create release
         id: create-release
@@ -47,7 +46,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ steps.read-metadata.outputs.name }}
-          body: ${{ steps.read-metadata.outputs.body }}
           tag_name: ${{ steps.read-metadata.outputs.tag_name }}
           draft: ${{ steps.read-metadata.outputs.draft }}
           prerelease: ${{ steps.read-metadata.outputs.prerelease }}
