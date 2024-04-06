@@ -58,26 +58,42 @@ jobs:
     strategy:
       matrix:
         python_tag: [
-          "3.7",
-          "3.7-slim",
           "3.7-alpine",
           "3.7-buster",
-          "3.8",
-          "3.8-slim",
+          "3.7-bullseye",
+          "3.7-bookworm",
+          "3.7-slim",
+          "3.7",
+          "3.7-alpine",
+          "3.7-buster",
+          "3.7-bullseye",
+          "3.7-bookworm",
+          "3.7-slim",
+          "3.7",
           "3.8-alpine",
           "3.8-buster",
-          "3.9",
-          "3.9-slim",
+          "3.8-bullseye",
+          "3.8-bookworm",
+          "3.8-slim",
+          "3.8",
           "3.9-alpine",
           "3.9-buster",
-          "3.10",
-          "3.10-slim",
+          "3.9-bullseye",
+          "3.9-bookworm",
+          "3.9-slim",
+          "3.9",
           "3.10-alpine",
           "3.10-buster",
-          "3.11",
-          "3.11-slim",
+          "3.10-bullseye",
+          "3.10-bookworm",
+          "3.10-slim",
+          "3.10",
           "3.11-alpine",
           "3.11-buster",
+          "3.11-bullseye",
+          "3.11-bookworm",
+          "3.11-slim",
+          "3.11",
         ]
     steps:
       - name: Set up QEMU
@@ -99,7 +115,7 @@ jobs:
         if: needs.check-release.outputs.release_id
         uses: docker/build-push-action@v5
         with:
-          platforms: linux/amd64,linux/arm64,linux/x86_64
+          platforms: linux/386,linux/amd64,linux/arm/v5,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x,linux/arm64,linux/x86_64
           build-args: PYTHON_VERSION=${{ matrix.python_tag }}
           push: true
           tags: seven45/pdm-ci:${{ matrix.python_tag }}
