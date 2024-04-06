@@ -115,7 +115,7 @@ jobs:
         if: needs.check-release.outputs.release_id
         uses: docker/build-push-action@v5
         with:
-          platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/arm64,linux/x86_64
+          platforms: linux/amd64,linux/arm/v7,linux/arm64/v8,linux/arm64,linux/x86_64
           build-args: PYTHON_VERSION=${{ matrix.python_tag }}
           push: true
           tags: seven45/pdm-ci:${{ matrix.python_tag }}
