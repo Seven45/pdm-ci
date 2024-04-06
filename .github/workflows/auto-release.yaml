@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   check-release:
-    name: Create release if found new pdm-version on original repo
+    name: Create release
     runs-on: ubuntu-latest
     outputs:
       release_id: ${{ steps.create-release.outputs.id }}
@@ -40,7 +40,7 @@ jobs:
           echo "draft=$(cat release-info.json | jq -r '.draft')" >> $GITHUB_OUTPUT
           echo "prerelease=$(cat release-info.json | jq -r '.prerelease')" >> $GITHUB_OUTPUT
 
-      - name: Create release
+      - name: Tag release
         id: create-release
         if: steps.check-files.outputs.files_changed == 'true'
         uses: softprops/action-gh-release@v2
@@ -115,7 +115,7 @@ jobs:
         if: needs.check-release.outputs.release_id
         uses: docker/build-push-action@v5
         with:
-          platforms: linux/386,linux/amd64,linux/arm/v5,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x,linux/arm64,linux/x86_64
+          platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x,linux/arm64,linux/x86_64
           build-args: PYTHON_VERSION=${{ matrix.python_tag }}
           push: true
           tags: seven45/pdm-ci:${{ matrix.python_tag }}
