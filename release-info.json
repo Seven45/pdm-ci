@@ -40,14 +40,14 @@
   "body": "\n### Bug Fixes\n\n- Per-source configuration for ca-certs and client-cert. [#2754](https://github.com/pdm-project/pdm/issues/2754)\n- Remove all caches by removing individual cache types one by one. [#2757](https://github.com/pdm-project/pdm/issues/2757)\n- Use the default HTTP client when downloading the pythons, to use the certificates settings. [#2759](https://github.com/pdm-project/pdm/issues/2759)\n- Fix a race condition where pth files take effect when multiple packages are installed in parallel. [#2762](https://github.com/pdm-project/pdm/issues/2762)\n- Refuse to run recursive composite scripts. [#2766](https://github.com/pdm-project/pdm/issues/2766)\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/150196659/reactions",
-    "total_count": 10,
-    "+1": 5,
+    "total_count": 13,
+    "+1": 7,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 5,
+    "rocket": 6,
     "eyes": 0
   }
 }
