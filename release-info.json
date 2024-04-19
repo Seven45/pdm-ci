@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/150890177",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/150890177/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/150890177/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.14.0",
-  "id": 150890177,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/151887298/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.15.0",
+  "id": 151887298,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4I_mbB",
-  "tag_name": "2.14.0",
-  "target_commitish": "d475b6a243ee4b406c9f40c0f3dbc6bb585bd19a",
-  "name": "v2.14.0",
+  "node_id": "RE_kwDODbsoBs4JDZ3C",
+  "tag_name": "2.15.0",
+  "target_commitish": "712d7f91d62761bcc9aedaa1a52cf664c1f40b1a",
+  "name": "v2.15.0",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-04-12T08:33:59Z",
-  "published_at": "2024-04-12T08:36:43Z",
+  "created_at": "2024-04-19T08:53:49Z",
+  "published_at": "2024-04-19T08:54:27Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.14.0",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.14.0",
-  "body": "\n\n### Features & Improvements\n\n- Revert the package cache introduced in 2.13. Don't cache the decompressed contents of wheels unless being told so. ([#2803](https://github.com/pdm-project/pdm/issues/2803))\n\n### Bug Fixes\n\n- Fix inconsistent logging when `pdm use` a different python interpreter ([#2776](https://github.com/pdm-project/pdm/issues/2776))\n- Fix PDM unable to find Python interpreters when `PDM_IGNORE_ACTIVE_VENV` is set ([#2779](https://github.com/pdm-project/pdm/issues/2779))\n- Check verify_ssl when trusting each source. ([#2784](https://github.com/pdm-project/pdm/issues/2784))\n- Fix name check for project itself in `pdm outdated` ([#2785](https://github.com/pdm-project/pdm/issues/2785))\n- Fix a regression that proxy env vars are not respected. ([#2788](https://github.com/pdm-project/pdm/issues/2788))\n- Fix an issue that venv provider can't be found when providers are explicitly configured. ([#2792](https://github.com/pdm-project/pdm/issues/2792))\n- Fix a bug that `[tool.pdm.options]` are ignored if `-c/--config CONFIG` is given. ([#2793](https://github.com/pdm-project/pdm/issues/2793))\n- Make `--without` respect groups in `dev-dependencies` ([#2799](https://github.com/pdm-project/pdm/issues/2799))\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.15.0",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.15.0",
+  "body": "\n\n### Features & Improvements\n\n- Packages format preferences can now be defined in the project `pyproject.toml`\n  using the `no-binary`, `only-binary` and `prefer-binary` keys of the `tool.pdm.resolution` section. ([#2656](https://github.com/pdm-project/pdm/issues/2656))\n\n### Bug Fixes\n\n- Don't create project and virtualenv when running `pdm python install`. ([#2809](https://github.com/pdm-project/pdm/issues/2809))\n- Clean up the python installation directory if a previous download was unsuccessful. ([#2810](https://github.com/pdm-project/pdm/issues/2810))\n- Don't cache editable installations. ([#2816](https://github.com/pdm-project/pdm/issues/2816))\n- Fix a bug that installing in-project plugins with editable local paths doesn't work. ([#2820](https://github.com/pdm-project/pdm/issues/2820))\n- Don't create log directory until it's needed, to fix a PermissionError in docker environment. ([#2825](https://github.com/pdm-project/pdm/issues/2825))\n- Fix recursive script detection on multiple invocations. ([#2829](https://github.com/pdm-project/pdm/issues/2829))\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/150890177/reactions",
-    "total_count": 10,
-    "+1": 0,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298/reactions",
+    "total_count": 4,
+    "+1": 1,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 10,
+    "rocket": 3,
     "eyes": 0
   }
 }
