@@ -40,13 +40,13 @@
   "body": "\n\n### Features & Improvements\n\n- Packages format preferences can now be defined in the project `pyproject.toml`\n  using the `no-binary`, `only-binary` and `prefer-binary` keys of the `tool.pdm.resolution` section. ([#2656](https://github.com/pdm-project/pdm/issues/2656))\n\n### Bug Fixes\n\n- Don't create project and virtualenv when running `pdm python install`. ([#2809](https://github.com/pdm-project/pdm/issues/2809))\n- Clean up the python installation directory if a previous download was unsuccessful. ([#2810](https://github.com/pdm-project/pdm/issues/2810))\n- Don't cache editable installations. ([#2816](https://github.com/pdm-project/pdm/issues/2816))\n- Fix a bug that installing in-project plugins with editable local paths doesn't work. ([#2820](https://github.com/pdm-project/pdm/issues/2820))\n- Don't create log directory until it's needed, to fix a PermissionError in docker environment. ([#2825](https://github.com/pdm-project/pdm/issues/2825))\n- Fix recursive script detection on multiple invocations. ([#2829](https://github.com/pdm-project/pdm/issues/2829))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298/reactions",
-    "total_count": 11,
+    "total_count": 12,
     "+1": 4,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
+    "heart": 1,
     "rocket": 7,
     "eyes": 0
   }
