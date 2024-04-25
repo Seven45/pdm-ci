@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/151887298/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.15.0",
-  "id": 151887298,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/152719183/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.15.1",
+  "id": 152719183,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4JDZ3C",
-  "tag_name": "2.15.0",
-  "target_commitish": "712d7f91d62761bcc9aedaa1a52cf664c1f40b1a",
-  "name": "v2.15.0",
+  "node_id": "RE_kwDODbsoBs4JGk9P",
+  "tag_name": "2.15.1",
+  "target_commitish": "ddaa420aabc5708d2adbd14e2aca0ec5433a6fd0",
+  "name": "v2.15.1",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-04-19T08:53:49Z",
-  "published_at": "2024-04-19T08:54:27Z",
+  "created_at": "2024-04-25T01:55:38Z",
+  "published_at": "2024-04-25T01:56:18Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.15.0",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.15.0",
-  "body": "\n\n### Features & Improvements\n\n- Packages format preferences can now be defined in the project `pyproject.toml`\n  using the `no-binary`, `only-binary` and `prefer-binary` keys of the `tool.pdm.resolution` section. ([#2656](https://github.com/pdm-project/pdm/issues/2656))\n\n### Bug Fixes\n\n- Don't create project and virtualenv when running `pdm python install`. ([#2809](https://github.com/pdm-project/pdm/issues/2809))\n- Clean up the python installation directory if a previous download was unsuccessful. ([#2810](https://github.com/pdm-project/pdm/issues/2810))\n- Don't cache editable installations. ([#2816](https://github.com/pdm-project/pdm/issues/2816))\n- Fix a bug that installing in-project plugins with editable local paths doesn't work. ([#2820](https://github.com/pdm-project/pdm/issues/2820))\n- Don't create log directory until it's needed, to fix a PermissionError in docker environment. ([#2825](https://github.com/pdm-project/pdm/issues/2825))\n- Fix recursive script detection on multiple invocations. ([#2829](https://github.com/pdm-project/pdm/issues/2829))\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.15.1",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.15.1",
+  "body": "\n\n### Bug Fixes\n\n- Disable check update in `zsh` completion script. ([#2838](https://github.com/pdm-project/pdm/issues/2838))\n- Fixes cached packages metadata files (`.referrers`) collisions on `sync` when using a `venv` with `symlink` cache method. ([#2839](https://github.com/pdm-project/pdm/issues/2839))\n\n### Documentation\n\n- Build docs with object inventory to support cross references from Sphinx documentation projects. ([#2841](https://github.com/pdm-project/pdm/issues/2841))\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/151887298/reactions",
-    "total_count": 12,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183/reactions",
+    "total_count": 5,
     "+1": 4,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 1,
-    "rocket": 7,
+    "heart": 0,
+    "rocket": 1,
     "eyes": 0
   }
 }
