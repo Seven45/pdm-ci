@@ -40,8 +40,8 @@
   "body": "\n\n### Bug Fixes\n\n- Disable check update in `zsh` completion script. ([#2838](https://github.com/pdm-project/pdm/issues/2838))\n- Fixes cached packages metadata files (`.referrers`) collisions on `sync` when using a `venv` with `symlink` cache method. ([#2839](https://github.com/pdm-project/pdm/issues/2839))\n\n### Documentation\n\n- Build docs with object inventory to support cross references from Sphinx documentation projects. ([#2841](https://github.com/pdm-project/pdm/issues/2841))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183/reactions",
-    "total_count": 7,
-    "+1": 5,
+    "total_count": 8,
+    "+1": 6,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
