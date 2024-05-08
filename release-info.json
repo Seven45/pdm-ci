@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/152719183/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.15.1",
-  "id": 152719183,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/154725707",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/154725707/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/154725707/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.15.2",
+  "id": 154725707,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4JGk9P",
-  "tag_name": "2.15.1",
-  "target_commitish": "ddaa420aabc5708d2adbd14e2aca0ec5433a6fd0",
-  "name": "v2.15.1",
+  "node_id": "RE_kwDODbsoBs4JOO1L",
+  "tag_name": "2.15.2",
+  "target_commitish": "f8717f1c326fbac4a4c8d386baa69e3b3dd0dce3",
+  "name": "v2.15.2",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-04-25T01:55:38Z",
-  "published_at": "2024-04-25T01:56:18Z",
+  "created_at": "2024-05-08T08:28:02Z",
+  "published_at": "2024-05-08T08:28:47Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.15.1",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.15.1",
-  "body": "\n\n### Bug Fixes\n\n- Disable check update in `zsh` completion script. ([#2838](https://github.com/pdm-project/pdm/issues/2838))\n- Fixes cached packages metadata files (`.referrers`) collisions on `sync` when using a `venv` with `symlink` cache method. ([#2839](https://github.com/pdm-project/pdm/issues/2839))\n\n### Documentation\n\n- Build docs with object inventory to support cross references from Sphinx documentation projects. ([#2841](https://github.com/pdm-project/pdm/issues/2841))\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.15.2",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.15.2",
+  "body": "\n\n### Features & Improvements\n\n- Use `get_runner()` method to build the task runner in `run` command. `runner_cls` attribute is deprecated. ([#2872](https://github.com/pdm-project/pdm/issues/2872))\n\n### Bug Fixes\n\n- Expand `${PROJECT_ROOT}` in source URLs. ([#2846](https://github.com/pdm-project/pdm/issues/2846))\n- Fix env and other options being inherited in nested composite scripts. ([#2849](https://github.com/pdm-project/pdm/issues/2849))\n- Keep the `${PROJECT_ROOT}` variable in dependencies after running `pdm lock --update-reuse`. ([#2852](https://github.com/pdm-project/pdm/issues/2852))\n- Make `direct_minimal_versions` work on newly added dependencies. ([#2853](https://github.com/pdm-project/pdm/issues/2853))\n- Fix a syntax error in the zsh completion script. ([#2868](https://github.com/pdm-project/pdm/issues/2868))\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/152719183/reactions",
-    "total_count": 10,
-    "+1": 7,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/154725707/reactions",
+    "total_count": 1,
+    "+1": 1,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 3,
+    "rocket": 0,
     "eyes": 0
   }
 }
