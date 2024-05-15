@@ -40,8 +40,8 @@
   "body": "\n\n### Features & Improvements\n\n- Use `get_runner()` method to build the task runner in `run` command. `runner_cls` attribute is deprecated. ([#2872](https://github.com/pdm-project/pdm/issues/2872))\n\n### Bug Fixes\n\n- Expand `${PROJECT_ROOT}` in source URLs. ([#2846](https://github.com/pdm-project/pdm/issues/2846))\n- Fix env and other options being inherited in nested composite scripts. ([#2849](https://github.com/pdm-project/pdm/issues/2849))\n- Keep the `${PROJECT_ROOT}` variable in dependencies after running `pdm lock --update-reuse`. ([#2852](https://github.com/pdm-project/pdm/issues/2852))\n- Make `direct_minimal_versions` work on newly added dependencies. ([#2853](https://github.com/pdm-project/pdm/issues/2853))\n- Fix a syntax error in the zsh completion script. ([#2868](https://github.com/pdm-project/pdm/issues/2868))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/154725707/reactions",
-    "total_count": 10,
-    "+1": 2,
+    "total_count": 11,
+    "+1": 3,
     "-1": 0,
     "laugh": 0,
     "hooray": 4,
