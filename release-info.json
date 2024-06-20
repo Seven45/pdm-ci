@@ -1,1 +1,53 @@
-{"message":"API rate limit exceeded for 172.183.132.19. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+{
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/158087226",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/158087226/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/158087226/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.15.4",
+  "id": 158087226,
+  "author": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDODbsoBs4JbDg6",
+  "tag_name": "2.15.4",
+  "target_commitish": "f429652f856a61f59ce5013e3195a30fbe88ce62",
+  "name": "v2.15.4",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2024-05-30T00:58:49Z",
+  "published_at": "2024-05-30T00:59:29Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.15.4",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.15.4",
+  "body": "\n\n### Bug Fixes\n\n- Build wheel from sdist if available, to make sure sdist is built properly. This behavior is consistent with [pypa/build](https://pypi.org/project/build). ([#2843](https://github.com/pdm-project/pdm/issues/2843))\n- Fix the issue of self-referencing extra dependencies failing to be resolved for local packages. ([#2898](https://github.com/pdm-project/pdm/issues/2898))\n- Fix an issue of max recursion depth error when parsing a poetry project with circular dependencies on local packages. ([#2900](https://github.com/pdm-project/pdm/issues/2900))\n- Fix a bug that VCS dependencies and `--self` don't work in the exported requirements.txt with hashes. ([#2908](https://github.com/pdm-project/pdm/issues/2908))\n- Fix a cache miss when there exist built wheels for a given link. ([#2912](https://github.com/pdm-project/pdm/issues/2912))\n- Don't try to store caches when `--no-cache` is given. ([#2913](https://github.com/pdm-project/pdm/issues/2913))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/158087226/reactions",
+    "total_count": 15,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 5,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 10,
+    "eyes": 0
+  }
+}
