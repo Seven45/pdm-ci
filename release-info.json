@@ -40,11 +40,11 @@
   "body": "\n\n### Bug Fixes\n\n- Build wheel from sdist if available, to make sure sdist is built properly. This behavior is consistent with [pypa/build](https://pypi.org/project/build). ([#2843](https://github.com/pdm-project/pdm/issues/2843))\n- Fix the issue of self-referencing extra dependencies failing to be resolved for local packages. ([#2898](https://github.com/pdm-project/pdm/issues/2898))\n- Fix an issue of max recursion depth error when parsing a poetry project with circular dependencies on local packages. ([#2900](https://github.com/pdm-project/pdm/issues/2900))\n- Fix a bug that VCS dependencies and `--self` don't work in the exported requirements.txt with hashes. ([#2908](https://github.com/pdm-project/pdm/issues/2908))\n- Fix a cache miss when there exist built wheels for a given link. ([#2912](https://github.com/pdm-project/pdm/issues/2912))\n- Don't try to store caches when `--no-cache` is given. ([#2913](https://github.com/pdm-project/pdm/issues/2913))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/158087226/reactions",
-    "total_count": 15,
+    "total_count": 16,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 5,
+    "hooray": 6,
     "confused": 0,
     "heart": 0,
     "rocket": 10,
