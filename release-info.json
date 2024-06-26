@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/162232649",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/162232649/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/162232649/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.16.0",
-  "id": 162232649,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/162432889",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/162432889/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/162432889/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.16.1",
+  "id": 162432889,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4Jq3lJ",
-  "tag_name": "2.16.0",
-  "target_commitish": "7664d7b71924d91e0ae8a678ead71cdc35c158ea",
-  "name": "v2.16.0",
+  "node_id": "RE_kwDODbsoBs4Jrod5",
+  "tag_name": "2.16.1",
+  "target_commitish": "0dd75eef0a6dba093008ee3c131bb623638c3b56",
+  "name": "v2.16.1",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-06-25T07:55:14Z",
-  "published_at": "2024-06-25T07:55:51Z",
+  "created_at": "2024-06-26T04:28:33Z",
+  "published_at": "2024-06-26T04:29:12Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.16.0",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.16.0",
-  "body": "\n\n### Features & Improvements\n\n- Add `--no-extras` to `pdm export` to strip extras from the requirements. Now the default behavior is to keep extras. ([#2519](https://github.com/pdm-project/pdm/issues/2519))\n- Support PEP 723: running scripts with inline metadata in standalone environment with dependencies. ([#2924](https://github.com/pdm-project/pdm/issues/2924))\n- `pdm use` and `pdm python install` now take `requires-python` into account (incl. from pyproject.toml) if python version\n  not specified and `pdm use` provides auto installation by that. ([#2943](https://github.com/pdm-project/pdm/issues/2943))\n- `--no-isolation` no longer installs `build-requires` nor dynamic build dependencies, to be consistent with `pip`. ([#2944](https://github.com/pdm-project/pdm/issues/2944))\n- Add notifiers in CLI output when global project is being used. ([#2952](https://github.com/pdm-project/pdm/issues/2952))\n- Use `tool.pdm.resolution` table when calculating the content hash of project file, previously only `overrides` table was used.\n  This will change the hash already stored in the lockfile, so bump the lockfile version to `4.4.2`. ([#2956](https://github.com/pdm-project/pdm/issues/2956))\n\n### Bug Fixes\n\n- Add max retries on read timeout or bad connection. ([#2914](https://github.com/pdm-project/pdm/issues/2914))\n- Don't update local files if they don't change. ([#2966](https://github.com/pdm-project/pdm/issues/2966))\n- Don't list python versions that don't have any installation link for the current platform. ([#2970](https://github.com/pdm-project/pdm/issues/2970))\n\n### Documentation\n\n- Clarify the purposes of `pdm outdated` and `--unconstrained` option. ([#2965](https://github.com/pdm-project/pdm/issues/2965))\n- Some clarifications on the interpreter selection and central package cache. ([#2967](https://github.com/pdm-project/pdm/issues/2967))\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.16.1",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.16.1",
+  "body": "\n\n### Bug Fixes\n\n- Fix new interface from pbs_installer regarding `build_dir` and best match auto-install strategy for `pdm use`\n  (same as for `pdm python install --list`) ([#2943](https://github.com/pdm-project/pdm/issues/2943))\n- Fix crash when pdm is used with `importlib-metadata` version 8.0. ([#2974](https://github.com/pdm-project/pdm/issues/2974))\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/162232649/reactions",
-    "total_count": 3,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/162432889/reactions",
+    "total_count": 4,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 0,
+    "hooray": 3,
     "confused": 0,
     "heart": 0,
-    "rocket": 3,
+    "rocket": 1,
     "eyes": 0
   }
 }
