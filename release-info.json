@@ -40,8 +40,8 @@
   "body": "\n\n### Bug Fixes\n\n- Fix new interface from pbs_installer regarding `build_dir` and best match auto-install strategy for `pdm use`\n  (same as for `pdm python install --list`) ([#2943](https://github.com/pdm-project/pdm/issues/2943))\n- Fix crash when pdm is used with `importlib-metadata` version 8.0. ([#2974](https://github.com/pdm-project/pdm/issues/2974))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/162432889/reactions",
-    "total_count": 7,
-    "+1": 1,
+    "total_count": 8,
+    "+1": 2,
     "-1": 0,
     "laugh": 0,
     "hooray": 5,
