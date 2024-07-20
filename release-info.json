@@ -40,14 +40,14 @@
   "body": "\n\n### Bug Fixes\n\n- Raise dep-logic lower bound to 0.4.2 to fix issues with pdm lock after upgrading from older pdm versions ([#3033](https://github.com/pdm-project/pdm/issues/3033))\n- Correct the current platform and architecture for win32 and macos systems. ([#3035](https://github.com/pdm-project/pdm/issues/3035))\n\n### Miscellany\n\n- Fix zsh completions ([#3031](https://github.com/pdm-project/pdm/issues/3031))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/166196276/reactions",
-    "total_count": 1,
+    "total_count": 3,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 1,
+    "hooray": 2,
     "confused": 0,
     "heart": 0,
-    "rocket": 0,
+    "rocket": 1,
     "eyes": 0
   }
 }
