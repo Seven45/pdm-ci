@@ -37,5 +37,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.17.2",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.17.2",
-  "body": "### Features & Improvements\r\n\r\n- Improve the installation progress output to show the time elapsed. ([#3051](https://github.com/pdm-project/pdm/issues/3051))\r\n- The effect of `pypi.ignore_stored_index` changes a bit. Now even if it is true, index configurations in the config will still be loaded if the index is listed in the `pyproject.toml`. ([#3052](https://github.com/pdm-project/pdm/issues/3052))\r\n\r\n### Bug Fixes\r\n\r\n- Ignore invalid requires-python values from index. ([#3038](https://github.com/pdm-project/pdm/issues/3038))\r\n- Fix the group selection logic, to make `--without GROUP` work as expected. ([#3045](https://github.com/pdm-project/pdm/issues/3045))\r\n- Suppress outputs for `pdm python install --quiet`. ([#3049](https://github.com/pdm-project/pdm/issues/3049))\r\n\r\n\r\n"
+  "body": "### Features & Improvements\r\n\r\n- Improve the installation progress output to show the time elapsed. ([#3051](https://github.com/pdm-project/pdm/issues/3051))\r\n- The effect of `pypi.ignore_stored_index` changes a bit. Now even if it is true, index configurations in the config will still be loaded if the index is listed in the `pyproject.toml`. ([#3052](https://github.com/pdm-project/pdm/issues/3052))\r\n\r\n### Bug Fixes\r\n\r\n- Ignore invalid requires-python values from index. ([#3038](https://github.com/pdm-project/pdm/issues/3038))\r\n- Fix the group selection logic, to make `--without GROUP` work as expected. ([#3045](https://github.com/pdm-project/pdm/issues/3045))\r\n- Suppress outputs for `pdm python install --quiet`. ([#3049](https://github.com/pdm-project/pdm/issues/3049))\r\n\r\n\r\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/168021770/reactions",
+    "total_count": 7,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 7,
+    "eyes": 0
+  }
 }
