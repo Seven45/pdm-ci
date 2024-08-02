@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/168021770",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/168021770/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/168021770/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.17.2",
-  "id": 168021770,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/168232230",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/168232230/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/168232230/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.17.3",
+  "id": 168232230,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,30 +24,30 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4KA88K",
-  "tag_name": "2.17.2",
-  "target_commitish": "fa61dbc9afdb102a4839035f2d68521813a5ebf1",
-  "name": "v2.17.2",
+  "node_id": "RE_kwDODbsoBs4KBwUm",
+  "tag_name": "2.17.3",
+  "target_commitish": "3d3c8492abd231a1a9ad716c37e204d37838727f",
+  "name": "v2.17.3",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-07-31T11:16:53Z",
-  "published_at": "2024-07-31T11:17:33Z",
+  "created_at": "2024-08-01T12:16:10Z",
+  "published_at": "2024-08-01T12:16:49Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.17.2",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.17.2",
-  "body": "### Features & Improvements\r\n\r\n- Improve the installation progress output to show the time elapsed. ([#3051](https://github.com/pdm-project/pdm/issues/3051))\r\n- The effect of `pypi.ignore_stored_index` changes a bit. Now even if it is true, index configurations in the config will still be loaded if the index is listed in the `pyproject.toml`. ([#3052](https://github.com/pdm-project/pdm/issues/3052))\r\n\r\n### Bug Fixes\r\n\r\n- Ignore invalid requires-python values from index. ([#3038](https://github.com/pdm-project/pdm/issues/3038))\r\n- Fix the group selection logic, to make `--without GROUP` work as expected. ([#3045](https://github.com/pdm-project/pdm/issues/3045))\r\n- Suppress outputs for `pdm python install --quiet`. ([#3049](https://github.com/pdm-project/pdm/issues/3049))\r\n\r\n\r\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.17.3",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.17.3",
+  "body": "\n\n### Bug Fixes\n\n- Fix a crash issue when `requires-python` is absent in the project metadata. ([#3062](https://github.com/pdm-project/pdm/issues/3062))\n- Now correctly sets related config for PDM_IGNORE_SAVED_PYTHON when it is set to \"false\", \"no\", \"0\". ([#3064](https://github.com/pdm-project/pdm/issues/3064))\n- Fix a bug that PDM plugins installed from project-root cannot be loaded, if they have dependencies. ([#3067](https://github.com/pdm-project/pdm/issues/3067))\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/168021770/reactions",
-    "total_count": 7,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/168232230/reactions",
+    "total_count": 5,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 0,
+    "hooray": 4,
     "confused": 0,
     "heart": 0,
-    "rocket": 7,
+    "rocket": 1,
     "eyes": 0
   }
 }
