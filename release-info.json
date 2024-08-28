@@ -40,7 +40,7 @@
   "body": "\n\n### Bug Fixes\n\n- Skip checking `project.name` if it is absent when running `pdm outdated`. ([#3095](https://github.com/pdm-project/pdm/issues/3095))\n- Don't remove the `cross_platform` strategy from old lock files. ([#3105](https://github.com/pdm-project/pdm/issues/3105))\n- Fix a bug that the VCS revision is lost if the candidate metadata is cached during resolution. ([#3107](https://github.com/pdm-project/pdm/issues/3107))\n- Fix a bug that PDM can't delete source password when saved in keyring. ([#3108](https://github.com/pdm-project/pdm/issues/3108))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/170510740/reactions",
-    "total_count": 5,
+    "total_count": 6,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
@@ -48,6 +48,6 @@
     "confused": 0,
     "heart": 0,
     "rocket": 2,
-    "eyes": 0
+    "eyes": 1
   }
 }
