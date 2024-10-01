@@ -40,8 +40,8 @@
   "body": "\n\n### Bug Fixes\n\n- PDM libraries are not loaded correctly for in-process scripts when installed in the user site. ([#3178](https://github.com/pdm-project/pdm/issues/3178))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/176371955/reactions",
-    "total_count": 4,
-    "+1": 1,
+    "total_count": 5,
+    "+1": 2,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
