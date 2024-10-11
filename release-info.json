@@ -1,1 +1,53 @@
-{"message":"API rate limit exceeded for 20.43.245.193. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+{
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/179446102",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/179446102/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/179446102/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.19.2",
+  "id": 179446102,
+  "author": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDODbsoBs4KsiFW",
+  "tag_name": "2.19.2",
+  "target_commitish": "5ee042a6201468a4ee787441d870afebf8d63e7c",
+  "name": "v2.19.2",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2024-10-11T00:36:45Z",
+  "published_at": "2024-10-11T00:37:21Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.19.2",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.19.2",
+  "body": "\n\n### Features & Improvements\n\n- Support installing free-threaded Python interpreters with the `t` suffix. ([#3201](https://github.com/pdm-project/pdm/issues/3201))\n\n### Bug Fixes\n\n- `use_uv` fails to lock when there are non-ascii characters in pyproject.toml on Windows. ([#3181](https://github.com/pdm-project/pdm/issues/3181))\n- Fix the `pre_install` and `post_install` signals receiving an exhausted generator, instead of a list of packages. ([#3190](https://github.com/pdm-project/pdm/issues/3190))\n- Create backup file with random filename to avoid conflicts. ([#3193](https://github.com/pdm-project/pdm/issues/3193))\n- Fix the logic error in the `uv` format marker matching. ([#3197](https://github.com/pdm-project/pdm/issues/3197))\n- `pdm lock --check` on a lockfile generated with older PDM version has a 0 exit code when there's a change in `pyproject.toml`. ([#3199](https://github.com/pdm-project/pdm/issues/3199))\n\n### Documentation\n\n- Fixed *Bash Completion* suggestion so it doesn't require root privileges ([#3183](https://github.com/pdm-project/pdm/issues/3183))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/179446102/reactions",
+    "total_count": 4,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 2,
+    "eyes": 0
+  }
+}
