@@ -40,14 +40,14 @@
   "body": "\n\n### Features & Improvements\n\n- Support installing free-threaded Python interpreters with the `t` suffix. ([#3201](https://github.com/pdm-project/pdm/issues/3201))\n\n### Bug Fixes\n\n- `use_uv` fails to lock when there are non-ascii characters in pyproject.toml on Windows. ([#3181](https://github.com/pdm-project/pdm/issues/3181))\n- Fix the `pre_install` and `post_install` signals receiving an exhausted generator, instead of a list of packages. ([#3190](https://github.com/pdm-project/pdm/issues/3190))\n- Create backup file with random filename to avoid conflicts. ([#3193](https://github.com/pdm-project/pdm/issues/3193))\n- Fix the logic error in the `uv` format marker matching. ([#3197](https://github.com/pdm-project/pdm/issues/3197))\n- `pdm lock --check` on a lockfile generated with older PDM version has a 0 exit code when there's a change in `pyproject.toml`. ([#3199](https://github.com/pdm-project/pdm/issues/3199))\n\n### Documentation\n\n- Fixed *Bash Completion* suggestion so it doesn't require root privileges ([#3183](https://github.com/pdm-project/pdm/issues/3183))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/179446102/reactions",
-    "total_count": 4,
+    "total_count": 6,
     "+1": 2,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 2,
+    "rocket": 4,
     "eyes": 0
   }
 }
