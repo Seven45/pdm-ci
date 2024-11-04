@@ -41,8 +41,8 @@
   "body": "### Features & Improvements\r\n\r\n- Support dependency groups as standardized by [PEP 735](https://peps.python.org/pep-0735/). By default, dev dependencies will be written to `[dependency-groups]` table. ([#3230](https://github.com/pdm-project/pdm/issues/3230))\r\n\r\n### Bug Fixes\r\n\r\n- Fix a bug that `strategy.inherit_metadata` config is not honored when using `--lockfile` option. ([#3232](https://github.com/pdm-project/pdm/issues/3232))\r\n- Always perform install-time resolution when `use_uv` is on. ([#3233](https://github.com/pdm-project/pdm/issues/3233))\r\n\r\n### Miscellany\r\n\r\n- Update `resolvelib` to 1.1.0. ([#3235](https://github.com/pdm-project/pdm/issues/3235))\r\n\r\n\r\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/183032065/reactions",
-    "total_count": 8,
-    "+1": 2,
+    "total_count": 9,
+    "+1": 3,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
