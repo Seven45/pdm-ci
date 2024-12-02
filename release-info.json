@@ -41,14 +41,14 @@
   "body": "\n### Features & Improvements\n\n- Pass original working directory as env variable to pdm scripts ([#3179](https://github.com/pdm-project/pdm/issues/3179))\n- Output similar commands or script command when the input command is not correct ([#3270](https://github.com/pdm-project/pdm/issues/3270))\n- improve readability of Python interpreter validation message ([#3276](https://github.com/pdm-project/pdm/issues/3276))\n- Print task name by default when using `pdm run` ([#3277](https://github.com/pdm-project/pdm/issues/3277))\n- Make `OrderedSet.__contains__` run in O(1) ([#3280](https://github.com/pdm-project/pdm/issues/3280))\n- Emit `post_lock` after writing pyproject.toml and pdm.lock in add/update ([#3285](https://github.com/pdm-project/pdm/issues/3285))\n- Drop support of Python 3.8 ([#3298](https://github.com/pdm-project/pdm/issues/3298))\n\n### Bug Fixes\n\n- Fix the name normalization issue for optional dependency groups. ([#3271](https://github.com/pdm-project/pdm/issues/3271))\n- Don't use uv when installing plugins in project. ([#3283](https://github.com/pdm-project/pdm/issues/3283))\n- Fix the bug that pdm plugins are invalid after installation on ubuntu system python. ([#3289](https://github.com/pdm-project/pdm/issues/3289))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/187218475/reactions",
-    "total_count": 4,
+    "total_count": 5,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 4,
+    "rocket": 5,
     "eyes": 0
   }
 }
