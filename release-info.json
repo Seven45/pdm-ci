@@ -41,14 +41,14 @@
   "body": "\n### Features & Improvements\n\n- Use minimal template if the project is an application. ([#3295](https://github.com/pdm-project/pdm/issues/3295))\n- Add one `safe_compatible` version specifiers saving strategy. ([#3301](https://github.com/pdm-project/pdm/issues/3301))\n- Allow customizing scripts display with `scripts.show_header` settings. ([#3313](https://github.com/pdm-project/pdm/issues/3313))\n- Speed up the resolution by only resolving wheel candidates if possible. ([#3319](https://github.com/pdm-project/pdm/issues/3319))\n- Drop version from the search result, following the change of warehouse. ([#3328](https://github.com/pdm-project/pdm/issues/3328))\n- Support `overrides` settings under `[tool.pdm.resolution]` with use_uv ([#3330](https://github.com/pdm-project/pdm/issues/3330))\n\n### Bug Fixes\n\n- No longer requires `wheel` to build a setuptools-backed package. ([#3320](https://github.com/pdm-project/pdm/issues/3320))\n- Fix an inconsistent behavior when running `pdm remove <package>` with uv enabled. ([#3323](https://github.com/pdm-project/pdm/issues/3323))\n- Fix: uninstallation error when pdm is not installed before. ([#3325](https://github.com/pdm-project/pdm/issues/3325))\n- Fix a bug in uv mode that direct URL dependencies can't be installed. ([#3332](https://github.com/pdm-project/pdm/issues/3332))\n- Fix a crash issue when rewriting dependency groups with `include-group` items. ([#3333](https://github.com/pdm-project/pdm/issues/3333))\n- Also read username from keyring if missing in source/repository config. ([#3334](https://github.com/pdm-project/pdm/issues/3334))\n- Allow configuring repositories in project. ([#3335](https://github.com/pdm-project/pdm/issues/3335))\n\n### Miscellany\n\n- Mark tests that require uv and skip them if uv is not found. ([#3324](https://github.com/pdm-project/pdm/issues/3324))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/189663540/reactions",
-    "total_count": 3,
+    "total_count": 4,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 2,
     "confused": 0,
     "heart": 0,
-    "rocket": 1,
+    "rocket": 2,
     "eyes": 0
   }
 }
