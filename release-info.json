@@ -41,11 +41,11 @@
   "body": "\n### Bug Fixes\n\n- Fix zsh hanging issue by removing PyPI package completion. ([#3329](https://github.com/pdm-project/pdm/issues/3329))\n- Write dev dependencies to `dependency-groups` section when importing project from other package managers. ([#3354](https://github.com/pdm-project/pdm/issues/3354))\n\n### Miscellany\n\n- Show a warning when resolving against cross-platform targets under uv mode. ([#3341](https://github.com/pdm-project/pdm/issues/3341))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/191610700/reactions",
-    "total_count": 2,
+    "total_count": 3,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 2,
+    "hooray": 3,
     "confused": 0,
     "heart": 0,
     "rocket": 0,
