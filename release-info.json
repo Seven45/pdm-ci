@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/191610700",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/191610700/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/191610700/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.22.1",
-  "id": 191610700,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/194211047",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/194211047/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/194211047/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.22.2",
+  "id": 194211047,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -25,30 +25,30 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4La79M",
-  "tag_name": "2.22.1",
-  "target_commitish": "6ea9d55d74211d26cfa430037da3969f4e9359cb",
-  "name": "v2.22.1",
+  "node_id": "RE_kwDODbsoBs4Lk2zn",
+  "tag_name": "2.22.2",
+  "target_commitish": "5148adc628bc4c91d77ae0fac8ef066cb6dd91bf",
+  "name": "v2.22.2",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-12-19T08:47:04Z",
-  "published_at": "2024-12-19T08:48:05Z",
+  "created_at": "2025-01-11T01:00:48Z",
+  "published_at": "2025-01-11T01:01:29Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.22.1",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.22.1",
-  "body": "\n### Bug Fixes\n\n- Fix zsh hanging issue by removing PyPI package completion. ([#3329](https://github.com/pdm-project/pdm/issues/3329))\n- Write dev dependencies to `dependency-groups` section when importing project from other package managers. ([#3354](https://github.com/pdm-project/pdm/issues/3354))\n\n### Miscellany\n\n- Show a warning when resolving against cross-platform targets under uv mode. ([#3341](https://github.com/pdm-project/pdm/issues/3341))\n\n\n",
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.22.2",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.22.2",
+  "body": "\n\n### Features & Improvements\n\n- Write installer metadata like `INSTALLER` and `REQUESTED` to dist-info directory when installing packages. ([#3359](https://github.com/pdm-project/pdm/issues/3359))\n- Respect `.python-version` file in the project root directory when selecting the Python interpreter. By default, it will be written when running `pdm use` command. ([#3367](https://github.com/pdm-project/pdm/issues/3367))\n\n### Bug Fixes\n\n- Fix a problem of missing dependencies when adding to dev dependencies if both editable and non-editable dependencies exist. ([#3361](https://github.com/pdm-project/pdm/issues/3361))\n- Use stdlib for URL <-> Path conversions. ([#3362](https://github.com/pdm-project/pdm/issues/3362))\n- `shellingham.detect_shell()` returns `('tcsh', '/bin/tcsh')` for tcsh on FreeBSD, so the current code tries to use the Bash venv activation script and fails due to syntax error. This change fixes the issue. ([#3366](https://github.com/pdm-project/pdm/issues/3366))\n- Fix a performance issue because pypi source credentials were being queried many times from keyring. ([#3368](https://github.com/pdm-project/pdm/issues/3368))\n\n\n",
   "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/191610700/reactions",
-    "total_count": 5,
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/194211047/reactions",
+    "total_count": 4,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 5,
+    "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 0,
+    "rocket": 4,
     "eyes": 0
   }
 }
