@@ -41,14 +41,14 @@
   "body": "\n### Bug Fixes\n\n- Don't validate local file requirements that are not used. ([#3376](https://github.com/pdm-project/pdm/issues/3376))\n- Don't set \"dependencies\" as empty list for uv toml if there is no dependencies in the raw toml file. ([#3378](https://github.com/pdm-project/pdm/issues/3378))\n- Add a dummy project name to the script environment pyproject.toml. ([#3382](https://github.com/pdm-project/pdm/issues/3382))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/196855132/reactions",
-    "total_count": 2,
+    "total_count": 5,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 2,
+    "rocket": 5,
     "eyes": 0
   }
 }
