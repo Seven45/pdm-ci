@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/196855132",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/196855132/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/196855132/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.22.3",
-  "id": 196855132,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/204291568",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/204291568/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/204291568/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.22.4",
+  "id": 204291568,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -25,30 +25,18 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4Lu8Vc",
-  "tag_name": "2.22.3",
-  "target_commitish": "4c2e194c734e632c1485d02ebf0397702aacb56e",
-  "name": "v2.22.3",
+  "node_id": "RE_kwDODbsoBs4MLT3w",
+  "tag_name": "2.22.4",
+  "target_commitish": "564d09acbf2c8ef6500a3864f1fa1d38b3c5cdd5",
+  "name": "v2.22.4",
   "draft": false,
   "prerelease": false,
-  "created_at": "2025-01-27T02:53:49Z",
-  "published_at": "2025-01-27T02:54:30Z",
+  "created_at": "2025-03-07T06:57:18Z",
+  "published_at": "2025-03-07T06:57:50Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.22.3",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.22.3",
-  "body": "\n### Bug Fixes\n\n- Don't validate local file requirements that are not used. ([#3376](https://github.com/pdm-project/pdm/issues/3376))\n- Don't set \"dependencies\" as empty list for uv toml if there is no dependencies in the raw toml file. ([#3378](https://github.com/pdm-project/pdm/issues/3378))\n- Add a dummy project name to the script environment pyproject.toml. ([#3382](https://github.com/pdm-project/pdm/issues/3382))\n\n\n",
-  "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/196855132/reactions",
-    "total_count": 8,
-    "+1": 0,
-    "-1": 0,
-    "laugh": 0,
-    "hooray": 0,
-    "confused": 0,
-    "heart": 0,
-    "rocket": 8,
-    "eyes": 0
-  }
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.22.4",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.22.4",
+  "body": "\n### Bug Fixes\n\n- Ensure dev-dependencies are added to the correct group when the `tool.pdm.dev-dependencies` table has groups. ([#3392](https://github.com/pdm-project/pdm/issues/3392))\n\n\n"
 }
