@@ -38,5 +38,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.22.4",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.22.4",
-  "body": "\n### Bug Fixes\n\n- Ensure dev-dependencies are added to the correct group when the `tool.pdm.dev-dependencies` table has groups. ([#3392](https://github.com/pdm-project/pdm/issues/3392))\n\n\n"
+  "body": "\n### Bug Fixes\n\n- Ensure dev-dependencies are added to the correct group when the `tool.pdm.dev-dependencies` table has groups. ([#3392](https://github.com/pdm-project/pdm/issues/3392))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/204291568/reactions",
+    "total_count": 4,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 1,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
