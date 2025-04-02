@@ -41,13 +41,13 @@
   "body": "\n### Features & Improvements\n\n- Add `pdm python find` command to search for a python interpreter. ([#3389](https://github.com/pdm-project/pdm/issues/3389))\n- `pdm import` now converts `package-mode` from Poetry's settings table to `distribution`. ([#3427](https://github.com/pdm-project/pdm/issues/3427))\n\n### Bug Fixes\n\n- Excluding non-existing groups for `pdm remove`. ([#3404](https://github.com/pdm-project/pdm/issues/3404))\n- Fix a bug that `pdm add` and `pdm update` remove dependency groups incorrectly. ([#3418](https://github.com/pdm-project/pdm/issues/3418))\n- Fix a bug that using resolution overrides drops extra dependencies. ([#3426](https://github.com/pdm-project/pdm/issues/3426))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/209473806/reactions",
-    "total_count": 6,
+    "total_count": 7,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 6,
+    "heart": 7,
     "rocket": 0,
     "eyes": 0
   }
