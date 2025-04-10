@@ -169,7 +169,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 22012670,
-      "download_count": 0,
+      "download_count": 5,
       "created_at": "2025-04-09T03:29:35Z",
       "updated_at": "2025-04-09T03:29:36Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.23.1/pdm-2.23.1-x86_64-pc-windows-msvc.tar.gz"
@@ -215,14 +215,14 @@
   "body": "\n### Features & Improvements\n\n- Use `pyapp` to wrap `pdm` as a Python application that bootstrap itself at runtime. ([#3429](https://github.com/pdm-project/pdm/issues/3429))\n- Support all providers `id` is supporting currently for OIDC trusted publishing ([#3441](https://github.com/pdm-project/pdm/issues/3441))\n\n### Bug Fixes\n\n- Installation error for local plugins specified with file URL without a name. ([#3407](https://github.com/pdm-project/pdm/issues/3407))\n- Eliminate the warning about inherit_metadata when using uv mode. ([#3434](https://github.com/pdm-project/pdm/issues/3434))\n- Fix an installation failure when installing editable local dependencies on Windows and Python 3.13. ([#3444](https://github.com/pdm-project/pdm/issues/3444))\n- Fix a bug that overriden requirements in lock file get rewritten when adding a new requirement. ([#3446](https://github.com/pdm-project/pdm/issues/3446))\n- Cyclic group inclusion is detected incorrectly. Also show the cyclic group names in the error message. ([#3447](https://github.com/pdm-project/pdm/issues/3447))\n- Fix a bug that `pdm remove` doesn't handle dependency groups include correctly. ([#3452](https://github.com/pdm-project/pdm/issues/3452))\n- Update `unearth` to address an issue downloading git repos with short commit hash. ([#3455](https://github.com/pdm-project/pdm/issues/3455))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/211177255/reactions",
-    "total_count": 1,
+    "total_count": 2,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 1,
+    "rocket": 2,
     "eyes": 0
   }
 }
