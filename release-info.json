@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/pdm-project/pdm/releases/213240909",
-  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/213240909/assets",
-  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/213240909/assets{?name,label}",
-  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.24.0",
-  "id": 213240909,
+  "url": "https://api.github.com/repos/pdm-project/pdm/releases/214162723",
+  "assets_url": "https://api.github.com/repos/pdm-project/pdm/releases/214162723/assets",
+  "upload_url": "https://uploads.github.com/repos/pdm-project/pdm/releases/214162723/assets{?name,label}",
+  "html_url": "https://github.com/pdm-project/pdm/releases/tag/2.24.1",
+  "id": 214162723,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -25,20 +25,20 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDODbsoBs4MtcxN",
-  "tag_name": "2.24.0",
-  "target_commitish": "ba2af395c27cd378b326a7ce22244d755e11e580",
-  "name": "v2.24.0",
+  "node_id": "RE_kwDODbsoBs4Mw90j",
+  "tag_name": "2.24.1",
+  "target_commitish": "a310abc09a2bb42c8ea59aec786d692179e8022a",
+  "name": "v2.24.1",
   "draft": false,
   "prerelease": false,
-  "created_at": "2025-04-18T02:35:26Z",
-  "published_at": "2025-04-18T02:36:02Z",
+  "created_at": "2025-04-23T09:35:42Z",
+  "published_at": "2025-04-23T09:36:25Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/247397732",
-      "id": 247397732,
-      "node_id": "RA_kwDODbsoBs4Ovv1k",
-      "name": "pdm-2.24.0-aarch64-apple-darwin.tar.gz",
+      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/248732059",
+      "id": 248732059,
+      "node_id": "RA_kwDODbsoBs4O01mb",
+      "name": "pdm-2.24.1-aarch64-apple-darwin.tar.gz",
       "label": "",
       "uploader": {
         "login": "github-actions[bot]",
@@ -63,17 +63,17 @@
       },
       "content_type": "application/x-gtar",
       "state": "uploaded",
-      "size": 16626845,
-      "download_count": 3,
-      "created_at": "2025-04-18T02:37:50Z",
-      "updated_at": "2025-04-18T02:37:52Z",
-      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.0/pdm-2.24.0-aarch64-apple-darwin.tar.gz"
+      "size": 16626925,
+      "download_count": 1,
+      "created_at": "2025-04-23T09:38:48Z",
+      "updated_at": "2025-04-23T09:38:49Z",
+      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-aarch64-apple-darwin.tar.gz"
     },
     {
-      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/247397857",
-      "id": 247397857,
-      "node_id": "RA_kwDODbsoBs4Ovv3h",
-      "name": "pdm-2.24.0-aarch64-unknown-linux-gnu.tar.gz",
+      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/248732313",
+      "id": 248732313,
+      "node_id": "RA_kwDODbsoBs4O01qZ",
+      "name": "pdm-2.24.1-aarch64-unknown-linux-gnu.tar.gz",
       "label": "",
       "uploader": {
         "login": "github-actions[bot]",
@@ -98,17 +98,17 @@
       },
       "content_type": "application/x-gtar",
       "state": "uploaded",
-      "size": 18554178,
-      "download_count": 3,
-      "created_at": "2025-04-18T02:38:47Z",
-      "updated_at": "2025-04-18T02:38:48Z",
-      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.0/pdm-2.24.0-aarch64-unknown-linux-gnu.tar.gz"
+      "size": 18554393,
+      "download_count": 1,
+      "created_at": "2025-04-23T09:39:44Z",
+      "updated_at": "2025-04-23T09:39:45Z",
+      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-aarch64-unknown-linux-gnu.tar.gz"
     },
     {
-      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/247397936",
-      "id": 247397936,
-      "node_id": "RA_kwDODbsoBs4Ovv4w",
-      "name": "pdm-2.24.0-x86_64-apple-darwin.tar.gz",
+      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/248732130",
+      "id": 248732130,
+      "node_id": "RA_kwDODbsoBs4O01ni",
+      "name": "pdm-2.24.1-x86_64-apple-darwin.tar.gz",
       "label": "",
       "uploader": {
         "login": "github-actions[bot]",
@@ -133,17 +133,17 @@
       },
       "content_type": "application/x-gtar",
       "state": "uploaded",
-      "size": 16909050,
-      "download_count": 3,
-      "created_at": "2025-04-18T02:39:08Z",
-      "updated_at": "2025-04-18T02:39:09Z",
-      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.0/pdm-2.24.0-x86_64-apple-darwin.tar.gz"
+      "size": 16909127,
+      "download_count": 1,
+      "created_at": "2025-04-23T09:39:06Z",
+      "updated_at": "2025-04-23T09:39:08Z",
+      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-apple-darwin.tar.gz"
     },
     {
-      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/247398371",
-      "id": 247398371,
-      "node_id": "RA_kwDODbsoBs4Ovv_j",
-      "name": "pdm-2.24.0-x86_64-pc-windows-msvc.tar.gz",
+      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/248732666",
+      "id": 248732666,
+      "node_id": "RA_kwDODbsoBs4O01v6",
+      "name": "pdm-2.24.1-x86_64-pc-windows-msvc.tar.gz",
       "label": "",
       "uploader": {
         "login": "github-actions[bot]",
@@ -168,17 +168,17 @@
       },
       "content_type": "application/x-gtar",
       "state": "uploaded",
-      "size": 22015558,
-      "download_count": 6,
-      "created_at": "2025-04-18T02:42:55Z",
-      "updated_at": "2025-04-18T02:42:56Z",
-      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.0/pdm-2.24.0-x86_64-pc-windows-msvc.tar.gz"
+      "size": 22015634,
+      "download_count": 1,
+      "created_at": "2025-04-23T09:41:23Z",
+      "updated_at": "2025-04-23T09:41:24Z",
+      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-pc-windows-msvc.tar.gz"
     },
     {
-      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/247397870",
-      "id": 247397870,
-      "node_id": "RA_kwDODbsoBs4Ovv3u",
-      "name": "pdm-2.24.0-x86_64-unknown-linux-gnu.tar.gz",
+      "url": "https://api.github.com/repos/pdm-project/pdm/releases/assets/248732024",
+      "id": 248732024,
+      "node_id": "RA_kwDODbsoBs4O01l4",
+      "name": "pdm-2.24.1-x86_64-unknown-linux-gnu.tar.gz",
       "label": "",
       "uploader": {
         "login": "github-actions[bot]",
@@ -203,26 +203,14 @@
       },
       "content_type": "application/x-gtar",
       "state": "uploaded",
-      "size": 22201927,
-      "download_count": 5,
-      "created_at": "2025-04-18T02:38:49Z",
-      "updated_at": "2025-04-18T02:38:50Z",
-      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.0/pdm-2.24.0-x86_64-unknown-linux-gnu.tar.gz"
+      "size": 22202056,
+      "download_count": 1,
+      "created_at": "2025-04-23T09:38:30Z",
+      "updated_at": "2025-04-23T09:38:31Z",
+      "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-unknown-linux-gnu.tar.gz"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.24.0",
-  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.24.0",
-  "body": "\n### Features & Improvements\n\n- New command `pdm new` that behaves like `pdm init` but creates a new project. ([#3462](https://github.com/pdm-project/pdm/issues/3462))\n- Support use `--name` as project name for command `pdm new` e.g. `pdm new hello --name world` ([#3476](https://github.com/pdm-project/pdm/issues/3476))\n- Support exporting to pylock.toml format as described by PEP 751. ([#3480](https://github.com/pdm-project/pdm/issues/3480))\n\n### Bug Fixes\n\n- Pass the `--quiet` option to `pdm sync` command. ([#3401](https://github.com/pdm-project/pdm/issues/3401))\n- If a `.python-version` file is found and it contains multiple lines, the file will be ignored. The usage of the `.python-version` file can be disabled, if configuration value `python.use_python_version` (or environment variable `PDM_USE_PYTHON_VERSION`) is `False`. ([#3417](https://github.com/pdm-project/pdm/issues/3417))\n- fix `pdm config -e` command to open read-only file under linux ([#3423](https://github.com/pdm-project/pdm/issues/3423))\n- Replace project names and import names in both `README.md` and `pyproject.toml` when running `pdm init <template>`. ([#3460](https://github.com/pdm-project/pdm/issues/3460))\n- Fix a bug that URL dependency hashes are not updated if running `pdm lock --update-reuse`. ([#3461](https://github.com/pdm-project/pdm/issues/3461))\n\n\n",
-  "reactions": {
-    "url": "https://api.github.com/repos/pdm-project/pdm/releases/213240909/reactions",
-    "total_count": 8,
-    "+1": 4,
-    "-1": 0,
-    "laugh": 0,
-    "hooray": 4,
-    "confused": 0,
-    "heart": 0,
-    "rocket": 0,
-    "eyes": 0
-  }
+  "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.24.1",
+  "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.24.1",
+  "body": "\n### Bug Fixes\n\n- Install the project when using the `BaseSynchronizer` with `install_self` set\n  to `True`. This fixes the bug that when calling `pdm sync --quiet`, it skips\n  installing the project itself. ([#3484](https://github.com/pdm-project/pdm/issues/3484))\n- Mark one additional test as requiring network, and fix another one\n  not to require it anymore. ([#3487](https://github.com/pdm-project/pdm/issues/3487))\n\n\n"
 }
