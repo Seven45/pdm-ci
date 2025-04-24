@@ -64,7 +64,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 16626925,
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-04-23T09:38:48Z",
       "updated_at": "2025-04-23T09:38:49Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-aarch64-apple-darwin.tar.gz"
@@ -99,7 +99,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 18554393,
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-04-23T09:39:44Z",
       "updated_at": "2025-04-23T09:39:45Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-aarch64-unknown-linux-gnu.tar.gz"
@@ -134,7 +134,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 16909127,
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-04-23T09:39:06Z",
       "updated_at": "2025-04-23T09:39:08Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-apple-darwin.tar.gz"
@@ -169,7 +169,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 22015634,
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-04-23T09:41:23Z",
       "updated_at": "2025-04-23T09:41:24Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-pc-windows-msvc.tar.gz"
@@ -204,7 +204,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 22202056,
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-04-23T09:38:30Z",
       "updated_at": "2025-04-23T09:38:31Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-unknown-linux-gnu.tar.gz"
@@ -212,5 +212,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.24.1",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.24.1",
-  "body": "\n### Bug Fixes\n\n- Install the project when using the `BaseSynchronizer` with `install_self` set\n  to `True`. This fixes the bug that when calling `pdm sync --quiet`, it skips\n  installing the project itself. ([#3484](https://github.com/pdm-project/pdm/issues/3484))\n- Mark one additional test as requiring network, and fix another one\n  not to require it anymore. ([#3487](https://github.com/pdm-project/pdm/issues/3487))\n\n\n"
+  "body": "\n### Bug Fixes\n\n- Install the project when using the `BaseSynchronizer` with `install_self` set\n  to `True`. This fixes the bug that when calling `pdm sync --quiet`, it skips\n  installing the project itself. ([#3484](https://github.com/pdm-project/pdm/issues/3484))\n- Mark one additional test as requiring network, and fix another one\n  not to require it anymore. ([#3487](https://github.com/pdm-project/pdm/issues/3487))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/214162723/reactions",
+    "total_count": 2,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
