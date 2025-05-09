@@ -169,7 +169,7 @@
       "content_type": "application/x-gtar",
       "state": "uploaded",
       "size": 22015634,
-      "download_count": 12,
+      "download_count": 13,
       "created_at": "2025-04-23T09:41:23Z",
       "updated_at": "2025-04-23T09:41:24Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.1/pdm-2.24.1-x86_64-pc-windows-msvc.tar.gz"
