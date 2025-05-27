@@ -173,7 +173,7 @@
       "state": "uploaded",
       "size": 22018312,
       "digest": null,
-      "download_count": 3,
+      "download_count": 5,
       "created_at": "2025-05-23T01:07:10Z",
       "updated_at": "2025-05-23T01:07:11Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.24.2/pdm-2.24.2-x86_64-pc-windows-msvc.tar.gz"
@@ -220,11 +220,11 @@
   "body": "\n### Bug Fixes\n\n- Reinstalling local wheel if its checksum changes. ([#3503](https://github.com/pdm-project/pdm/issues/3503))\n- Ignore HTTP cache entries if deserialization fails. ([#3515](https://github.com/pdm-project/pdm/issues/3515))\n- Fetch missing URLs when `static_urls` is not enabled when running `pdm export -f pylock`. ([#3517](https://github.com/pdm-project/pdm/issues/3517))\n- Missing self package when `--self` or `--editable-self` is passed to `pdm export -f pylock`. ([#3518](https://github.com/pdm-project/pdm/issues/3518))\n\n### Miscellany\n\n- Add Python 3.14 to the test matrix. ([#3506](https://github.com/pdm-project/pdm/issues/3506))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/220523672/reactions",
-    "total_count": 2,
+    "total_count": 3,
     "+1": 1,
     "-1": 0,
     "laugh": 0,
-    "hooray": 1,
+    "hooray": 2,
     "confused": 0,
     "heart": 0,
     "rocket": 0,
