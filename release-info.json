@@ -65,7 +65,7 @@
       "state": "uploaded",
       "size": 16632653,
       "digest": "sha256:694bc56691918f596fc8254d8a2e007af071bdc508d7a1d3117f01a58be2a635",
-      "download_count": 1,
+      "download_count": 3,
       "created_at": "2025-06-16T02:52:20Z",
       "updated_at": "2025-06-16T02:52:22Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-aarch64-apple-darwin.tar.gz"
@@ -101,7 +101,7 @@
       "state": "uploaded",
       "size": 18561561,
       "digest": "sha256:9e136c826aa4fc5c9e3bf8d2b550c7c6c484b91af4972f69b3467994de71cf6d",
-      "download_count": 1,
+      "download_count": 3,
       "created_at": "2025-06-16T02:52:02Z",
       "updated_at": "2025-06-16T02:52:03Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-aarch64-unknown-linux-gnu.tar.gz"
@@ -137,7 +137,7 @@
       "state": "uploaded",
       "size": 16913773,
       "digest": "sha256:6c2458ba0143737fe81d5b3d6f9206ffec751d843782bb877b162048890a7c77",
-      "download_count": 1,
+      "download_count": 3,
       "created_at": "2025-06-16T02:52:45Z",
       "updated_at": "2025-06-16T02:52:47Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-x86_64-apple-darwin.tar.gz"
@@ -173,7 +173,7 @@
       "state": "uploaded",
       "size": 22023123,
       "digest": "sha256:2e0a41e55da9c51c6bcad91fe42d23179bc707bc564ff9738de7972c49e5d73a",
-      "download_count": 2,
+      "download_count": 4,
       "created_at": "2025-06-16T02:53:56Z",
       "updated_at": "2025-06-16T02:53:57Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-x86_64-pc-windows-msvc.tar.gz"
@@ -209,7 +209,7 @@
       "state": "uploaded",
       "size": 22209752,
       "digest": "sha256:d92dff05ded73e8f6bde30fc8a488744d72995eef292a88e8ed9d3b6fdc2c017",
-      "download_count": 2,
+      "download_count": 4,
       "created_at": "2025-06-16T02:52:29Z",
       "updated_at": "2025-06-16T02:52:30Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-x86_64-unknown-linux-gnu.tar.gz"
