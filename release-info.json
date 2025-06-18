@@ -101,7 +101,7 @@
       "state": "uploaded",
       "size": 18561561,
       "digest": "sha256:9e136c826aa4fc5c9e3bf8d2b550c7c6c484b91af4972f69b3467994de71cf6d",
-      "download_count": 3,
+      "download_count": 4,
       "created_at": "2025-06-16T02:52:02Z",
       "updated_at": "2025-06-16T02:52:03Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-aarch64-unknown-linux-gnu.tar.gz"
@@ -173,7 +173,7 @@
       "state": "uploaded",
       "size": 22023123,
       "digest": "sha256:2e0a41e55da9c51c6bcad91fe42d23179bc707bc564ff9738de7972c49e5d73a",
-      "download_count": 4,
+      "download_count": 8,
       "created_at": "2025-06-16T02:53:56Z",
       "updated_at": "2025-06-16T02:53:57Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-x86_64-pc-windows-msvc.tar.gz"
@@ -209,7 +209,7 @@
       "state": "uploaded",
       "size": 22209752,
       "digest": "sha256:d92dff05ded73e8f6bde30fc8a488744d72995eef292a88e8ed9d3b6fdc2c017",
-      "download_count": 4,
+      "download_count": 5,
       "created_at": "2025-06-16T02:52:29Z",
       "updated_at": "2025-06-16T02:52:30Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-x86_64-unknown-linux-gnu.tar.gz"
@@ -220,13 +220,13 @@
   "body": "## Bug fixes\r\n\r\n- Fix a bug that local file package metadata was missing when reading the lockfile.\r\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/225440602/reactions",
-    "total_count": 1,
+    "total_count": 2,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 1,
+    "heart": 2,
     "rocket": 0,
     "eyes": 0
   }
