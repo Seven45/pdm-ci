@@ -173,7 +173,7 @@
       "state": "uploaded",
       "size": 22023123,
       "digest": "sha256:2e0a41e55da9c51c6bcad91fe42d23179bc707bc564ff9738de7972c49e5d73a",
-      "download_count": 10,
+      "download_count": 11,
       "created_at": "2025-06-16T02:53:56Z",
       "updated_at": "2025-06-16T02:53:57Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.2/pdm-2.25.2-x86_64-pc-windows-msvc.tar.gz"
