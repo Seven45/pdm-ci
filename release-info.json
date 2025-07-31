@@ -66,7 +66,7 @@
       "state": "uploaded",
       "size": 16627022,
       "digest": "sha256:507ac333318bad6c3e2bfa12ba450ab1dd020d21201c4179f3db17ca2bd101c2",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-07-30T06:50:19Z",
       "updated_at": "2025-07-30T06:50:20Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.5/pdm-2.25.5-aarch64-apple-darwin.tar.gz"
@@ -102,7 +102,7 @@
       "state": "uploaded",
       "size": 18551100,
       "digest": "sha256:aa7d367bb8ee6d16c0a97e6aa7da0e45546802f00ff1615d2a45d507d1b44a6b",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-07-30T06:51:37Z",
       "updated_at": "2025-07-30T06:51:38Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.5/pdm-2.25.5-aarch64-unknown-linux-gnu.tar.gz"
@@ -138,7 +138,7 @@
       "state": "uploaded",
       "size": 16907085,
       "digest": "sha256:1cf2b74af0fdbd068745e8d0e3f7973b79b4d36378e3c735a1d10df168b3d69c",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-07-30T06:52:52Z",
       "updated_at": "2025-07-30T06:52:53Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.5/pdm-2.25.5-x86_64-apple-darwin.tar.gz"
@@ -174,7 +174,7 @@
       "state": "uploaded",
       "size": 22018514,
       "digest": "sha256:4e43675bd21b6af33298b32890f01af95ced6c39f20cc94410fea2b76a75100a",
-      "download_count": 3,
+      "download_count": 7,
       "created_at": "2025-07-30T06:53:00Z",
       "updated_at": "2025-07-30T06:53:01Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.5/pdm-2.25.5-x86_64-pc-windows-msvc.tar.gz"
@@ -210,7 +210,7 @@
       "state": "uploaded",
       "size": 22202557,
       "digest": "sha256:4437c8ba5dbb36ea2b926b53f9d14f9122611e4efacf639945828c77ec4fdf79",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-07-30T06:50:15Z",
       "updated_at": "2025-07-30T06:50:16Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.5/pdm-2.25.5-x86_64-unknown-linux-gnu.tar.gz"
@@ -221,11 +221,11 @@
   "body": "\n### Features & Improvements\n\n- Tell the difference between free-threaded Python and normal ones. Users need to request for free-threaded versions explicitly by adding `t` to the version string, otherwise the normal build will be preferred. ([#3562](https://github.com/pdm-project/pdm/issues/3562))\n\n### Bug Fixes\n\n- Fix a bug that editable local package URLs are empty when using `pylock.toml`. ([#3565](https://github.com/pdm-project/pdm/issues/3565))\n- Fix a bug where `pdm export` with `--lockfile pylock.toml` produced empty requirements.txt files due to missing group information extraction from pylock format markers. ([#3573](https://github.com/pdm-project/pdm/issues/3573))\n- Read metadata from installed distribution when using reuse-installed strategy. ([#3579](https://github.com/pdm-project/pdm/issues/3579))\n- Fix a lockfile writing error when locking git dependencies in the pylock.toml format. ([#3582](https://github.com/pdm-project/pdm/issues/3582))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/236162239/reactions",
-    "total_count": 1,
+    "total_count": 2,
     "+1": 1,
     "-1": 0,
     "laugh": 0,
-    "hooray": 0,
+    "hooray": 1,
     "confused": 0,
     "heart": 0,
     "rocket": 0,
