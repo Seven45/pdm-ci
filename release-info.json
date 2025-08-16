@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 22014020,
       "digest": "sha256:8be4dee27adcdfd916ccd8ff4321b274027be62c78d68c038d18ba1c2cecdfde",
-      "download_count": 4,
+      "download_count": 5,
       "created_at": "2025-08-14T02:12:19Z",
       "updated_at": "2025-08-14T02:12:20Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.6/pdm-2.25.6-x86_64-pc-windows-msvc.tar.gz"
@@ -211,7 +211,7 @@
       "state": "uploaded",
       "size": 22205282,
       "digest": "sha256:011dd73b3dc436e01a152fb66b935d06bd477bdb5f4f7ce59b1cfe619e49cd08",
-      "download_count": 3,
+      "download_count": 4,
       "created_at": "2025-08-14T02:08:34Z",
       "updated_at": "2025-08-14T02:08:35Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.25.6/pdm-2.25.6-x86_64-unknown-linux-gnu.tar.gz"
@@ -219,5 +219,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.25.6",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.25.6",
-  "body": "\n### Features & Improvements\n\n- The `pdm python install -v` command now shows the download URL for the Python interpreter. ([#3552](https://github.com/pdm-project/pdm/issues/3552))\n\n### Bug Fixes\n\n- Ensure `make_array` always returns a tomlkit array type. ([#3586](https://github.com/pdm-project/pdm/issues/3586))\n- Preserve multi-line help text in the CLI help output. ([#3587](https://github.com/pdm-project/pdm/issues/3587))\n- Re-caculate artifact files and hashes when the lock target changes. ([#3595](https://github.com/pdm-project/pdm/issues/3595))\n\n### Dependencies\n\n- Require packaging>22.0 and remove conditional PACKAGING_22 version checks. ([#3601](https://github.com/pdm-project/pdm/issues/3601))\n- Bump truststore to version 0.10.4. ([#3602](https://github.com/pdm-project/pdm/issues/3602))\n\n\n"
+  "body": "\n### Features & Improvements\n\n- The `pdm python install -v` command now shows the download URL for the Python interpreter. ([#3552](https://github.com/pdm-project/pdm/issues/3552))\n\n### Bug Fixes\n\n- Ensure `make_array` always returns a tomlkit array type. ([#3586](https://github.com/pdm-project/pdm/issues/3586))\n- Preserve multi-line help text in the CLI help output. ([#3587](https://github.com/pdm-project/pdm/issues/3587))\n- Re-caculate artifact files and hashes when the lock target changes. ([#3595](https://github.com/pdm-project/pdm/issues/3595))\n\n### Dependencies\n\n- Require packaging>22.0 and remove conditional PACKAGING_22 version checks. ([#3601](https://github.com/pdm-project/pdm/issues/3601))\n- Bump truststore to version 0.10.4. ([#3602](https://github.com/pdm-project/pdm/issues/3602))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/239846288/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 1,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
