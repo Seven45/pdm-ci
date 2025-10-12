@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 16631742,
       "digest": "sha256:a0d64422279eb68f3a870b581d36987627a5f1d82633986f670da852bfb410d5",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-10-11T01:56:11Z",
       "updated_at": "2025-10-11T01:56:12Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.0/pdm-2.26.0-aarch64-apple-darwin.tar.gz"
@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 18559590,
       "digest": "sha256:cadef515f574f1ab767a0bef6bde2a76c517396e0bc6b17048eb5614559d6776",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-10-11T01:48:42Z",
       "updated_at": "2025-10-11T01:48:43Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.0/pdm-2.26.0-aarch64-unknown-linux-gnu.tar.gz"
@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 16915734,
       "digest": "sha256:7d2421f560f62547f453302057ecad281df43c13836ffa5364c364296855b60a",
-      "download_count": 1,
+      "download_count": 2,
       "created_at": "2025-10-11T01:55:44Z",
       "updated_at": "2025-10-11T01:55:45Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.0/pdm-2.26.0-x86_64-apple-darwin.tar.gz"
@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 22017263,
       "digest": "sha256:205fe0f91eb58e3a938eeebec6c169428a209ec42f5c1ac5997582c128a7acdb",
-      "download_count": 2,
+      "download_count": 6,
       "created_at": "2025-10-11T01:52:42Z",
       "updated_at": "2025-10-11T01:52:43Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.0/pdm-2.26.0-x86_64-pc-windows-msvc.tar.gz"
@@ -211,7 +211,7 @@
       "state": "uploaded",
       "size": 22207426,
       "digest": "sha256:a442c72828ee8ecd4d6a53ec50c51e618d7e27cbdb8eb98bda37077d4a7c2651",
-      "download_count": 1,
+      "download_count": 3,
       "created_at": "2025-10-11T01:49:22Z",
       "updated_at": "2025-10-11T01:49:24Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.0/pdm-2.26.0-x86_64-unknown-linux-gnu.tar.gz"
@@ -222,11 +222,11 @@
   "body": "\n### Features & Improvements\n\n- Limit the log file size to 100MB and truncate the log output if exceeded. ([#3633](https://github.com/pdm-project/pdm/issues/3633))\n- Speed up dependency resolution in the bad path by skipping candidates of the same version when resolving. ([#3647](https://github.com/pdm-project/pdm/issues/3647))\n\n### Bug Fixes\n\n- Reload project files after running hook scripts. ([#3615](https://github.com/pdm-project/pdm/issues/3615))\n- Fix a bug when using UV as the resolver does not respect the venv.location configuration. ([#3616](https://github.com/pdm-project/pdm/issues/3616))\n- Fix `publish --skip-existing` for Nexus Repository OSS >= 3.70 ([#3617](https://github.com/pdm-project/pdm/issues/3617))\n- Fix a resolution failure when both prerelease and non-prerelease requirements exist. ([#3634](https://github.com/pdm-project/pdm/issues/3634))\n- Ignore invalid `python` requirement during locking. ([#3635](https://github.com/pdm-project/pdm/issues/3635))\n- Isolate PDM loggers with the root logger to avoid log leakage. ([#3637](https://github.com/pdm-project/pdm/issues/3637))\n- Fix a crash when resolving URL dependencies under `use_uv=true`. ([#3640](https://github.com/pdm-project/pdm/issues/3640))\n\n\n",
   "reactions": {
     "url": "https://api.github.com/repos/pdm-project/pdm/releases/253778865/reactions",
-    "total_count": 1,
+    "total_count": 2,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
-    "hooray": 1,
+    "hooray": 2,
     "confused": 0,
     "heart": 0,
     "rocket": 0,
