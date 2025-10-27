@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 22017263,
       "digest": "sha256:205fe0f91eb58e3a938eeebec6c169428a209ec42f5c1ac5997582c128a7acdb",
-      "download_count": 17,
+      "download_count": 18,
       "created_at": "2025-10-11T01:52:42Z",
       "updated_at": "2025-10-11T01:52:43Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.0/pdm-2.26.0-x86_64-pc-windows-msvc.tar.gz"
