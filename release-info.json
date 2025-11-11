@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 16915734,
       "digest": "sha256:03d8a78f83199964faae10b8a98fa344aa160134de37bfced801f95becf5d8b7",
-      "download_count": 2,
+      "download_count": 3,
       "created_at": "2025-10-29T05:47:51Z",
       "updated_at": "2025-10-29T05:47:52Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.1/pdm-2.26.1-x86_64-apple-darwin.tar.gz"
@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 22017302,
       "digest": "sha256:a3af4891eeccb4511403b423cacc15cb02e31e9dc2a83fb6d19704ee1b18dc85",
-      "download_count": 9,
+      "download_count": 10,
       "created_at": "2025-10-29T05:44:26Z",
       "updated_at": "2025-10-29T05:44:27Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.1/pdm-2.26.1-x86_64-pc-windows-msvc.tar.gz"
