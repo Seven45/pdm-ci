@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 22017302,
       "digest": "sha256:a3af4891eeccb4511403b423cacc15cb02e31e9dc2a83fb6d19704ee1b18dc85",
-      "download_count": 10,
+      "download_count": 11,
       "created_at": "2025-10-29T05:44:26Z",
       "updated_at": "2025-10-29T05:44:27Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.1/pdm-2.26.1-x86_64-pc-windows-msvc.tar.gz"
