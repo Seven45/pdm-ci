@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 22017302,
       "digest": "sha256:a3af4891eeccb4511403b423cacc15cb02e31e9dc2a83fb6d19704ee1b18dc85",
-      "download_count": 13,
+      "download_count": 14,
       "created_at": "2025-10-29T05:44:26Z",
       "updated_at": "2025-10-29T05:44:27Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.1/pdm-2.26.1-x86_64-pc-windows-msvc.tar.gz"
@@ -211,7 +211,7 @@
       "state": "uploaded",
       "size": 22207423,
       "digest": "sha256:fb10a5c57b5c16982e7418a437052a85c8022487c0d6ad4f221e0aef48d0ed69",
-      "download_count": 26,
+      "download_count": 30,
       "created_at": "2025-10-29T05:42:37Z",
       "updated_at": "2025-10-29T05:42:38Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.1/pdm-2.26.1-x86_64-unknown-linux-gnu.tar.gz"
