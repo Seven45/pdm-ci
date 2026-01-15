@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 16623288,
       "digest": "sha256:71e999037a0faaac1ee1ae17a2b98df8c0e3966b27f2f97dea0a195c477753cd",
-      "download_count": 32,
+      "download_count": 39,
       "created_at": "2026-01-09T02:19:17Z",
       "updated_at": "2026-01-09T02:19:18Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-aarch64-apple-darwin.tar.gz"
@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 105,
       "digest": "sha256:0852964a6d79307cc4f4ad6f3c24ccc2c860e32a9e7661b3467b22cbb3458ebe",
-      "download_count": 30,
+      "download_count": 36,
       "created_at": "2026-01-09T02:19:17Z",
       "updated_at": "2026-01-09T02:19:18Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-aarch64-apple-darwin.tar.gz.sha256"
@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 18557448,
       "digest": "sha256:0dfee25762fe05e4d19efff1e03539387c84a06461b1417cd39a7249d77a606c",
-      "download_count": 10,
+      "download_count": 24,
       "created_at": "2026-01-09T02:17:57Z",
       "updated_at": "2026-01-09T02:17:57Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-aarch64-unknown-linux-gnu.tar.gz"
@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 110,
       "digest": "sha256:0850c033aebaf442c11421d94163d4b2b5e9d08e01924f31d222ad4d83ad3969",
-      "download_count": 8,
+      "download_count": 22,
       "created_at": "2026-01-09T02:17:57Z",
       "updated_at": "2026-01-09T02:17:57Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-aarch64-unknown-linux-gnu.tar.gz.sha256"
@@ -211,7 +211,7 @@
       "state": "uploaded",
       "size": 16899625,
       "digest": "sha256:e392099729d254b26cee9de996687fbbf6a2051eaa2ef15fdd0176f101412d0a",
-      "download_count": 10,
+      "download_count": 11,
       "created_at": "2026-01-09T02:18:56Z",
       "updated_at": "2026-01-09T02:18:58Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-x86_64-apple-darwin.tar.gz"
@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 22212317,
       "digest": "sha256:86e1fefef4ff4161bea26a63726762293f61a24bbeddb075d7fc7b199a7c58ed",
-      "download_count": 1125,
+      "download_count": 1154,
       "created_at": "2026-01-09T02:18:22Z",
       "updated_at": "2026-01-09T02:18:23Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-x86_64-unknown-linux-gnu.tar.gz"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 109,
       "digest": "sha256:f381e05e08c8b5f393c91c6741f9997c2d4564ad5e0a5a3870ca53dc0305524a",
-      "download_count": 1120,
+      "download_count": 1147,
       "created_at": "2026-01-09T02:18:22Z",
       "updated_at": "2026-01-09T02:18:22Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.26.4/pdm-2.26.4-x86_64-unknown-linux-gnu.tar.gz.sha256"
