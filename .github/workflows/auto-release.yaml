@@ -52,7 +52,7 @@ jobs:
 
 
   publish-image:
-    name: Publish new image if release created
+    name: Publish image
     needs: check-release
     runs-on: ubuntu-latest
     strategy:
