@@ -58,12 +58,6 @@ jobs:
     strategy:
       matrix:
         python_tag: [
-          "3.9-alpine",
-          "3.9-buster",
-          "3.9-bullseye",
-          "3.9-bookworm",
-          "3.9-slim",
-          "3.9",
           "3.10-alpine",
           "3.10-buster",
           "3.10-bullseye",
@@ -81,6 +75,11 @@ jobs:
           "3.12-bookworm",
           "3.12-slim",
           "3.12",
+          "3.13-alpine",
+          "3.13-slim-bookworm",
+          "3.13-bookworm",
+          "3.13-slim",
+          "3.13-trixie",
         ]
     steps:
       - name: Set up QEMU
