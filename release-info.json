@@ -41,5 +41,17 @@
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.26.9",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.26.9",
   "body": "### Features & Improvements\r\n\r\n- Support `exclude-newer` in `pyproject.toml` in the `[tool.pdm.resolution]` table ([#3776](https://github.com/pdm-project/pdm/issues/3776))\r\n\r\n### Bug Fixes\r\n\r\n- Preserve pylock package markers when refreshing lockfile hashes. ([#3773](https://github.com/pdm-project/pdm/issues/3773))\r\n\r\n## What's Changed\r\n* Remove dead code by @duriantaco in https://github.com/pdm-project/pdm/pull/3774\r\n* [pre-commit.ci] pre-commit autoupdate by @pre-commit-ci[bot] in https://github.com/pdm-project/pdm/pull/3780\r\n* chore(deps): bump the actions group with 5 updates by @dependabot[bot] in https://github.com/pdm-project/pdm/pull/3778\r\n* fix: update pdm_scheme to set pep582_base in sysconfig and add corresponding test by @frostming in https://github.com/pdm-project/pdm/pull/3781\r\n* Allow `exclude-newer` to be defined in `pyproject.toml` by @sneakers-the-rat in https://github.com/pdm-project/pdm/pull/3782\r\n\r\n## New Contributors\r\n* @duriantaco made their first contribution in https://github.com/pdm-project/pdm/pull/3774\r\n* @sneakers-the-rat made their first contribution in https://github.com/pdm-project/pdm/pull/3782\r\n\r\n**Full Changelog**: https://github.com/pdm-project/pdm/compare/2.26.8...2.26.9",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/320107901/reactions",
+    "total_count": 2,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 1,
+    "eyes": 0
+  },
   "mentions_count": 5
 }
