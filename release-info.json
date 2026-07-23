@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 16615109,
       "digest": "sha256:b6091a6f4cfd29ac07c452f63aa6befa95f4d5d99f01001d109a44278f1b3bae",
-      "download_count": 105,
+      "download_count": 110,
       "created_at": "2026-06-23T01:53:59Z",
       "updated_at": "2026-06-23T01:54:00Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-aarch64-apple-darwin.tar.gz"
@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 105,
       "digest": "sha256:d0c1a49f31eef93543da521cf3bddb429e7798186b2e2a608cfa98b34df80b6b",
-      "download_count": 100,
+      "download_count": 105,
       "created_at": "2026-06-23T01:53:59Z",
       "updated_at": "2026-06-23T01:53:59Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-aarch64-apple-darwin.tar.gz.sha256"
@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 22005447,
       "digest": "sha256:be23be33f23cb06d9d88d5d91871090cc30614148effc90747d5193f46dc08af",
-      "download_count": 189,
+      "download_count": 199,
       "created_at": "2026-06-23T01:55:41Z",
       "updated_at": "2026-06-23T01:55:42Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-pc-windows-msvc.tar.gz"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 107,
       "digest": "sha256:03e8069f8b2dcc421bae5c818f5b72e04c62f030b4d0ede7dfdf960f4ff08166",
-      "download_count": 176,
+      "download_count": 186,
       "created_at": "2026-06-23T01:55:41Z",
       "updated_at": "2026-06-23T01:55:41Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-pc-windows-msvc.tar.gz.sha256"
@@ -355,7 +355,7 @@
       "state": "uploaded",
       "size": 22193324,
       "digest": "sha256:855e759cb23f494970f46c19da728ab17ccb7dd26cbfa8270eac961295a60b90",
-      "download_count": 421,
+      "download_count": 435,
       "created_at": "2026-06-23T01:52:50Z",
       "updated_at": "2026-06-23T01:52:51Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-unknown-linux-gnu.tar.gz"
@@ -391,7 +391,7 @@
       "state": "uploaded",
       "size": 109,
       "digest": "sha256:68d894783dc538f4f07f7802f828372d30118d42fe5546173357bc9bad674b31",
-      "download_count": 419,
+      "download_count": 428,
       "created_at": "2026-06-23T01:52:51Z",
       "updated_at": "2026-06-23T01:52:51Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-unknown-linux-gnu.tar.gz.sha256"
