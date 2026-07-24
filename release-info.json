@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 16615109,
       "digest": "sha256:b6091a6f4cfd29ac07c452f63aa6befa95f4d5d99f01001d109a44278f1b3bae",
-      "download_count": 110,
+      "download_count": 111,
       "created_at": "2026-06-23T01:53:59Z",
       "updated_at": "2026-06-23T01:54:00Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-aarch64-apple-darwin.tar.gz"
@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 18542001,
       "digest": "sha256:fd10a38a912a371c4429807ce2e4b31ccd7a5061dc0d79b29953a07067082ed9",
-      "download_count": 13,
+      "download_count": 15,
       "created_at": "2026-06-23T01:53:21Z",
       "updated_at": "2026-06-23T01:53:22Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-aarch64-unknown-linux-gnu.tar.gz"
@@ -211,7 +211,7 @@
       "state": "uploaded",
       "size": 16886024,
       "digest": "sha256:79a7b3c95e9bdb8cac3e2165f44f7287939baa8743f72b70b469db9788d8b680",
-      "download_count": 8,
+      "download_count": 9,
       "created_at": "2026-06-23T01:54:54Z",
       "updated_at": "2026-06-23T01:54:55Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-apple-darwin.tar.gz"
@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 22005447,
       "digest": "sha256:be23be33f23cb06d9d88d5d91871090cc30614148effc90747d5193f46dc08af",
-      "download_count": 199,
+      "download_count": 211,
       "created_at": "2026-06-23T01:55:41Z",
       "updated_at": "2026-06-23T01:55:42Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-pc-windows-msvc.tar.gz"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 107,
       "digest": "sha256:03e8069f8b2dcc421bae5c818f5b72e04c62f030b4d0ede7dfdf960f4ff08166",
-      "download_count": 186,
+      "download_count": 196,
       "created_at": "2026-06-23T01:55:41Z",
       "updated_at": "2026-06-23T01:55:41Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-pc-windows-msvc.tar.gz.sha256"
@@ -355,7 +355,7 @@
       "state": "uploaded",
       "size": 22193324,
       "digest": "sha256:855e759cb23f494970f46c19da728ab17ccb7dd26cbfa8270eac961295a60b90",
-      "download_count": 435,
+      "download_count": 450,
       "created_at": "2026-06-23T01:52:50Z",
       "updated_at": "2026-06-23T01:52:51Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-unknown-linux-gnu.tar.gz"
@@ -391,7 +391,7 @@
       "state": "uploaded",
       "size": 109,
       "digest": "sha256:68d894783dc538f4f07f7802f828372d30118d42fe5546173357bc9bad674b31",
-      "download_count": 428,
+      "download_count": 439,
       "created_at": "2026-06-23T01:52:51Z",
       "updated_at": "2026-06-23T01:52:51Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.28.0/pdm-2.28.0-x86_64-unknown-linux-gnu.tar.gz.sha256"
@@ -399,5 +399,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.28.0",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.28.0",
-  "body": "\n### Features & Improvements\n\n- Add experimental workspace support for managing local member projects in a shared root lock file. ([#1505](https://github.com/pdm-project/pdm/issues/1505))\n- Defer startup-time imports for Python, virtualenv, and self-management commands. ([#3673](https://github.com/pdm-project/pdm/issues/3673))\n\n### Bug Fixes\n\n- Fix `pdm completion bash` printing `__ltrim_colon_completions: command not found` (and a similar error for `_get_comp_words_by_ref`) when the generated script is sourced in a bash without the `bash-completion` package loaded, such as Git Bash on Windows or minimal Linux containers. The script now defines small fallbacks for both helpers when they are not already available. ([#3793](https://github.com/pdm-project/pdm/issues/3793))\n- Avoid forwarding duplicate SIGINT in pdm run on POSIX. ([#3808](https://github.com/pdm-project/pdm/issues/3808))\n\n### Documentation\n\n- Fix the Windows installation instructions for a specific version. `Invoke-Expression` (`iex`) does not accept an `-Args` parameter and cannot forward arguments to a piped script, so the documented command failed. Use the `$env:PDM_VERSION` environment variable, which the install script reads, instead. ([#3792](https://github.com/pdm-project/pdm/issues/3792))\n\n\n"
+  "body": "\n### Features & Improvements\n\n- Add experimental workspace support for managing local member projects in a shared root lock file. ([#1505](https://github.com/pdm-project/pdm/issues/1505))\n- Defer startup-time imports for Python, virtualenv, and self-management commands. ([#3673](https://github.com/pdm-project/pdm/issues/3673))\n\n### Bug Fixes\n\n- Fix `pdm completion bash` printing `__ltrim_colon_completions: command not found` (and a similar error for `_get_comp_words_by_ref`) when the generated script is sourced in a bash without the `bash-completion` package loaded, such as Git Bash on Windows or minimal Linux containers. The script now defines small fallbacks for both helpers when they are not already available. ([#3793](https://github.com/pdm-project/pdm/issues/3793))\n- Avoid forwarding duplicate SIGINT in pdm run on POSIX. ([#3808](https://github.com/pdm-project/pdm/issues/3808))\n\n### Documentation\n\n- Fix the Windows installation instructions for a specific version. `Invoke-Expression` (`iex`) does not accept an `-Args` parameter and cannot forward arguments to a piped script, so the documented command failed. Use the `$env:PDM_VERSION` environment variable, which the install script reads, instead. ([#3792](https://github.com/pdm-project/pdm/issues/3792))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/343239923/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
