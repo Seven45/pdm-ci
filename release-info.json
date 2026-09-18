@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 16614189,
       "digest": "sha256:3a131d7a03a69157e0b77263488a5c080f7fbd886cb70c01a2fe4d73a1f3c6ba",
-      "download_count": 4,
+      "download_count": 8,
       "created_at": "2026-09-17T07:02:33Z",
       "updated_at": "2026-09-17T07:02:34Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-aarch64-apple-darwin.tar.gz"
@@ -103,7 +103,7 @@
       "state": "uploaded",
       "size": 105,
       "digest": "sha256:a34de951d1425b249c75012a03debbb66376a8691c3a85beb7e276ab9be106e5",
-      "download_count": 3,
+      "download_count": 7,
       "created_at": "2026-09-17T07:02:33Z",
       "updated_at": "2026-09-17T07:02:34Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-aarch64-apple-darwin.tar.gz.sha256"
@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 18541151,
       "digest": "sha256:c555997659b79c662852bb69eea04b86e31f541327ccf9d291a32386bbeb82b1",
-      "download_count": 4,
+      "download_count": 6,
       "created_at": "2026-09-17T07:01:56Z",
       "updated_at": "2026-09-17T07:01:57Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-aarch64-unknown-linux-gnu.tar.gz"
@@ -175,7 +175,7 @@
       "state": "uploaded",
       "size": 110,
       "digest": "sha256:38e2445610bbe0164a2f26c8a495cf38edea90e8e11bea4f5506ff1529c1f3e3",
-      "download_count": 3,
+      "download_count": 5,
       "created_at": "2026-09-17T07:01:56Z",
       "updated_at": "2026-09-17T07:01:56Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-aarch64-unknown-linux-gnu.tar.gz.sha256"
@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 22006918,
       "digest": "sha256:ecf2dbb545deba7a9f16d91d1b704e1717123ce45b60c6200ca984d09e43575f",
-      "download_count": 6,
+      "download_count": 12,
       "created_at": "2026-09-17T07:03:59Z",
       "updated_at": "2026-09-17T07:04:00Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-x86_64-pc-windows-msvc.tar.gz"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 107,
       "digest": "sha256:43217ff627e5f145903b2b147ac2cd92e3dda3549ecdbfacbd881a42ec13d1a7",
-      "download_count": 6,
+      "download_count": 11,
       "created_at": "2026-09-17T07:03:59Z",
       "updated_at": "2026-09-17T07:03:59Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-x86_64-pc-windows-msvc.tar.gz.sha256"
@@ -355,7 +355,7 @@
       "state": "uploaded",
       "size": 22197713,
       "digest": "sha256:1617bd6eb0582da79a6c5fbdcebfe125077373b458025614502ed68bd8be8dcb",
-      "download_count": 7,
+      "download_count": 14,
       "created_at": "2026-09-17T07:02:20Z",
       "updated_at": "2026-09-17T07:02:21Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-x86_64-unknown-linux-gnu.tar.gz"
@@ -391,7 +391,7 @@
       "state": "uploaded",
       "size": 109,
       "digest": "sha256:813538122877986feb8c3db72cb139a84c6182f2986e80689dfe8e7da46877e2",
-      "download_count": 6,
+      "download_count": 11,
       "created_at": "2026-09-17T07:02:20Z",
       "updated_at": "2026-09-17T07:02:20Z",
       "browser_download_url": "https://github.com/pdm-project/pdm/releases/download/2.29.2/pdm-2.29.2-x86_64-unknown-linux-gnu.tar.gz.sha256"
@@ -399,5 +399,17 @@
   ],
   "tarball_url": "https://api.github.com/repos/pdm-project/pdm/tarball/2.29.2",
   "zipball_url": "https://api.github.com/repos/pdm-project/pdm/zipball/2.29.2",
-  "body": "\n### Bug Fixes\n\n- Fix writing lock files specified as bare relative filenames with `pdm lock --lockfile`. ([#3891](https://github.com/pdm-project/pdm/issues/3891))\n- Preserve local paths containing spaces and their extras and environment markers when importing requirements files. ([#3894](https://github.com/pdm-project/pdm/issues/3894))\n\n### Documentation\n\n- List the install-pdm.py options the script actually accepts. ([#3889](https://github.com/pdm-project/pdm/issues/3889))\n\n\n"
+  "body": "\n### Bug Fixes\n\n- Fix writing lock files specified as bare relative filenames with `pdm lock --lockfile`. ([#3891](https://github.com/pdm-project/pdm/issues/3891))\n- Preserve local paths containing spaces and their extras and environment markers when importing requirements files. ([#3894](https://github.com/pdm-project/pdm/issues/3894))\n\n### Documentation\n\n- List the install-pdm.py options the script actually accepts. ([#3889](https://github.com/pdm-project/pdm/issues/3889))\n\n\n",
+  "reactions": {
+    "url": "https://api.github.com/repos/pdm-project/pdm/releases/390494320/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 1,
+    "rocket": 0,
+    "eyes": 0
+  }
 }
